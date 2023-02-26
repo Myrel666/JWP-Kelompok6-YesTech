@@ -43,6 +43,7 @@
           <ul class="menuzord-menu menuzord-right">
             <li class="active"><a href="index.html">HOME</a></li>
             <li><a href="destinasi.html">DESTINASI</a></li>
+            <li><a href="#">KULINER</a></li>
             <li><a href="#">EVENT</a></li>
             <li><a href="#">AKOMODASI</a></li>
             <li><a href="#">INFORMASI</a></li>
