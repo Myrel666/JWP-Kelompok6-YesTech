@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/', function () {
 // Authentication
 Route::get('login', [LoginController::class, 'index'])->name('login');
 
+// Admin
+Route::get('home', [AdminController::class, 'index'])->name('admin.beranda');
