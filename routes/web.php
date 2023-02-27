@@ -25,5 +25,10 @@ Route::post('login', [LoginController::class, 'authenticate'])->name('auth');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 
-// Admin
+// Administrator
 Route::get('home', [AdminController::class, 'index'])->middleware('auth')->name('admin.beranda');
+// Administrator-Destinasi
+Route::get('admin/destinasi', [AdminController::class, 'destinasi'])->name('admin.destinasi');
+// Administrator-Kuliner
+Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
+
