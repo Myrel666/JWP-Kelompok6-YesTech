@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\Destination;
+use App\Models\Kuliner;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -13,19 +16,23 @@ class AdminController extends Controller
     // show dashboard
     public function index()
     {
-        return view('admin.dashboard');
+        $user = User::all();
+        $destinasi = Destination::all();
+        $kuliner = Kuliner::all();
+        return view('admin.dashboard',compact('user','destinasi','kuliner'));
     }
 
-    // show dashboard destinasi
+    // show navigasi destinasi
     public function destinasi()
     {
         return view('admin.destinasi');
     }
 
-    // show dashboard
+    // show navigasi kuliner
     public function kuliner()
     {
         return view('admin.kuliner');
     }
 
 }
+

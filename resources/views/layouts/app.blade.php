@@ -39,8 +39,7 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                  <span>Gold Member</span>
+                  <h5 class="mb-0 font-weight-normal">{{ Auth::user()->name }}</h5>
                 </div>
               </div>
               <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -94,7 +93,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('admin.destinasi') }}">
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="mdi mdi-map"></i>
               </span>
               <span class="menu-title">Set Destinasi</span>
             </a>
@@ -102,7 +101,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('admin.kuliner') }}">
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="mdi mdi-pizza"></i>
               </span>
               <span class="menu-title">Set Kuliner</span>
             </a>
@@ -126,7 +125,7 @@
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="{{ asset('THEMEWAGON') }}/template/assets/images/faces/face15.jpg" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">{{ Auth::user()->name }}</p>
                     <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
@@ -166,3 +165,35 @@
         </nav>
         <!-- partial:partials/_navbar.html end -->
         @yield('content')
+                  <!-- partial:partials/_footer.html -->
+                  <footer class="footer">
+                </footer>
+                <!-- partial -->
+              </div>
+              <!-- main-panel ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+          </div>
+          <!-- container-scroller -->
+          <!-- plugins:js -->
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/js/vendor.bundle.base.js"></script>
+          <!-- endinject -->
+          <!-- Plugin js for this page -->
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/chart.js/Chart.min.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/progressbar.js/progressbar.min.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+          <!-- End plugin js for this page -->
+          <!-- inject:js -->
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/off-canvas.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/hoverable-collapse.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/misc.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/settings.js"></script>
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/todolist.js"></script>
+          <!-- endinject -->
+          <!-- Custom js for this page -->
+          <script src="{{ asset('THEMEWAGON') }}/template/assets/js/dashboard.js"></script>
+          <!-- End custom js for this page -->
+        </body>
+      </html>
