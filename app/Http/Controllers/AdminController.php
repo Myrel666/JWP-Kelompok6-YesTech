@@ -29,7 +29,7 @@ class AdminController extends Controller
     }
 
     // show tambah destinasi
-    public function destinasiAdd()
+    public function destinasiForm()
     {
         return view('admin.destinasiadd');
     }

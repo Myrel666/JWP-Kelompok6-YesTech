@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('THEMEWAGON') }}/template/assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{ asset('THEMEWAGON') }}/template/assets/images/favicon.png" />
+    @stack('css')
   </head>
   <body>
     <div class="container-scroller">
@@ -195,5 +196,6 @@
           <!-- Custom js for this page -->
           <script src="{{ asset('THEMEWAGON') }}/template/assets/js/dashboard.js"></script>
           <!-- End custom js for this page -->
+          @stack('js')
         </body>
       </html>

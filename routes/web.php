@@ -29,7 +29,7 @@ Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('home', [AdminController::class, 'index'])->middleware('auth')->name('admin.beranda');
 // Administrator-Destinasi
 Route::get('admin/destinasi', [AdminController::class, 'destinasi'])->name('admin.destinasi');
-Route::get('admin/destinasi/add', [AdminController::class, 'destinasiAdd'])->name('admin.destinasi.add');
+Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->name('admin.destinasi.form');
 // Administrator-Kuliner
 Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
 
