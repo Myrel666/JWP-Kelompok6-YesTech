@@ -13,7 +13,7 @@
               </nav>
             </div>
             <div class="row">
-                <a class="btn btn-success" href="#">+ Create New Project</a>
+                <a class="btn btn-success" href="{{ route('admin.destinasi.add') }}">+ Create New Project</a>
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -22,10 +22,10 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>Profile</th>
-                            <th>VatNo.</th>
+                            <th>No.</th>
+                            <th>Name</th>
                             <th>Created</th>
-                            <th>Status</th>
+                            <th>Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -33,7 +33,10 @@
                             <td>Jacob</td>
                             <td>53275531</td>
                             <td>12 May 2017</td>
-                            <td><label class="badge badge-danger">Pending</label></td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Edit</button>
+                                <button type="button" class="btn btn-secondary">Detail</button>
+                            </td>
                           </tr>
                         </tbody>
                       </table>

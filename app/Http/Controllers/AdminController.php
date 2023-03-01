@@ -19,7 +19,7 @@ class AdminController extends Controller
         $user = User::all();
         $destinasi = Destination::all();
         $kuliner = Kuliner::all();
-        return view('admin.dashboard',compact('user','destinasi','kuliner'));
+        return view('admin.dashboard', compact('user', 'destinasi', 'kuliner'));
     }
 
     // show navigasi destinasi
@@ -28,11 +28,15 @@ class AdminController extends Controller
         return view('admin.destinasi');
     }
 
+    // show tambah destinasi
+    public function destinasiAdd()
+    {
+        return view('admin.destinasiadd');
+    }
+
     // show navigasi kuliner
     public function kuliner()
     {
         return view('admin.kuliner');
     }
-
 }
-
