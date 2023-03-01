@@ -12,8 +12,8 @@
                 </ol>
               </nav>
             </div>
-            <div class="row">
-                <a class="btn btn-success" href="{{ route('admin.destinasi.form') }}">+ Create New Project</a>
+            <div class="row justify-content-end">
+                    <a class="btn btn-success" href="{{ route('admin.destinasi.form') }}">+ Add Destinasi</a>
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">

@@ -31,7 +31,7 @@ class AdminController extends Controller
     // show tambah destinasi
     public function destinasiForm()
     {
-        return view('admin.destinasiadd');
+        return view('admin.destinasiform');
     }
 
     // show navigasi kuliner

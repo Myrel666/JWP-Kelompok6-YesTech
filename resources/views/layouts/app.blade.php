@@ -104,7 +104,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-pizza"></i>
               </span>
-              <span class="menu-title">Set Kuliner</span>
+              <span class="menu-title">Set Tempat Kuliner</span>
             </a>
           </li>
         </ul>
@@ -131,9 +131,9 @@
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                  <h6 class="p-3 mb-0">Profile</h6>
+                  <h6 class="p-3 mb-0">Action</h6>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
+                  {{-- <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-settings text-success"></i>
@@ -142,7 +142,7 @@
                     <div class="preview-item-content">
                       <p class="preview-subject mb-1">Settings</p>
                     </div>
-                  </a>
+                  </a> --}}
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item" href="{{ route('logout') }}">
                     <div class="preview-thumbnail">
@@ -154,9 +154,9 @@
                       <p class="preview-subject mb-1">Log out</p>
                     </div>
                   </a>
-                  <div class="dropdown-divider"></div>
+                  {{-- <div class="dropdown-divider"></div>
                   <p class="p-3 mb-0 text-center">Advanced settings</p>
-                </div>
+                </div> --}}
               </li>
             </ul>
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">

@@ -4,7 +4,7 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> List Destinasi </h3>
+              <h3 class="page-title"> List Kuliner </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Tables</a></li>
@@ -16,7 +16,7 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Destinasi</h4>
+                    <h4 class="card-title">Kuliner</h4>
                     <p class="card-description"> Add class <code>.table</code>
                     </p>
                     <div class="table-responsive">
