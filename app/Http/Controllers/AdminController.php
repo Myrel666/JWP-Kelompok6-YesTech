@@ -39,4 +39,10 @@ class AdminController extends Controller
     {
         return view('admin.kuliner');
     }
+
+    // show navigasi kuliner
+    public function kulinerForm()
+    {
+        return view('admin.kulinerform');
+    }
 }

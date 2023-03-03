@@ -38,4 +38,5 @@ Route::get('admin/destinasi', [AdminController::class, 'destinasi'])->name('admi
 Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->name('admin.destinasi.form');
 // Administrator-Kuliner
 Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
+Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
 

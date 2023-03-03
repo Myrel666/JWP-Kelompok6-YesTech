@@ -21,5 +21,10 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\User::factory(1)->create();
+
+        $this->call([
+            AreaSeeder::class,
+            CategorySeeder::class,
+        ]);
     }
 }
