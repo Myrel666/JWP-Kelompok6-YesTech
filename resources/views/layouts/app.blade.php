@@ -20,7 +20,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{ asset('THEMEWAGON') }}/template/assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('THEMEWAGON') }}/template/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ asset('THEMEWAGON') }}/template/assets/images/tourism.png" />
     @stack('css')
   </head>
   <body>
