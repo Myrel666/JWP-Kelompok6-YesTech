@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContributorController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,3 +41,5 @@ Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->n
 Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
 Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
 
+// Kontributor
+Route::get('home', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');

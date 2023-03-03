@@ -29,7 +29,7 @@ class LoginController extends Controller
             if(auth()->user()->role_id == '1'){
                 return redirect()->route('admin.beranda');
             }else{
-                return redirect()->route('kontributor.beranda');
+                return redirect()->route('contributor.beranda');
             }
         }
         return redirect()->back()->with('message', 'Email atau Password anda salah!');
