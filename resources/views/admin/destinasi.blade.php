@@ -13,11 +13,11 @@
               </nav>
             </div>
             <div class="row justify-content-end">
-                    <a class="btn btn-success" href="{{ route('admin.destinasi.form') }}">+ Add Destinasi</a>
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Destinasi</h4>
+                    <a class="btn btn-success me-auto mb-3" href="{{ route('admin.destinasi.form') }}">+ Add Destinasi</a>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>

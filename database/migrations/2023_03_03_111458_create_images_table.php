@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKulinersTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateKulinersTable extends Migration
      */
     public function up()
     {
-        Schema::create('kuliners', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('address', 255)->nullable();
-            $table->string('address_url', 255)->nullable();
-            $table->unsignedBigInteger('area_id');
+            $table->enum('type', ['destination', 'event']);
+            $table->unsignedBigInteger('parent_id');
+            $table->string('path');
             $table->timestamps();
-
-            $table->foreign('area_id')->references('id')->on('areas');
         });
     }
 
@@ -32,6 +29,6 @@ class CreateKulinersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kuliners');
+        Schema::dropIfExists('images');
     }
 }
