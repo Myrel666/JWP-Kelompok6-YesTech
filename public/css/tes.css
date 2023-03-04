@@ -118,10 +118,79 @@ body {
     color: #6868ac;
 }
 
+.navbar-kuliner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    z-index: 1000;
+}
+
+.kuliner-nav {
+    padding-top: 3.13rem;
+}
+
+.kuliner-nav p {
+    text-align: center;
+}
+
+.kuliner-nav p a {
+    text-decoration: none;
+    color: #6868ac;
+}
+
+.kuliner-judul h2 {
+    color: #212526;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.kuliner-filter {
+    text-align: center;
+    padding: 0 0;
+}
+
+.kuliner-filter button {
+    color: #6868ac;
+    background-color: #fff;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 0;
+    margin: 0 0;
+    padding: 2.5px 0;
+    width: 300px;
+}
+
+.kuliner-filter .filter {
+    color: #fff;
+    background-color: #6868ac;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.kuliner-filter button:hover {
+    background-color: #dedede;
+    color: #6868ac;
+}
+
 .img-fluid {
     width: 290px;
     height: 290px;
     border-radius: 100%;
+}
+
+.img-fluid-kuliner {
+    width: 290px;
+    height: 290px;
+    border-radius: 10px 100px;
 }
 
 .span-kategori {
