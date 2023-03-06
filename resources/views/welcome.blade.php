@@ -42,7 +42,7 @@
           </a>
           <ul class="menuzord-menu menuzord-right">
             <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="destinasi.html">DESTINASI</a></li>
+            <li><a href="{{route('destinasi')}}">DESTINASI</a></li>
             <li><a href="kulinersurabaya.html">KULINER</a></li>
             <li><a href="#">Login</a></li>
           </ul>
