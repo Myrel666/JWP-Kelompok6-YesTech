@@ -40,9 +40,9 @@
             alt=""
         /></a>
         <ul class="nav-link">
-          <li class="nav-item2"><a href="index.html">Beranda</a></li>
-          <li class="nav-item2"><a href="destinasi.html">Destinasi</a></li>
-          <li class="nav-item2"><a href="kulinersurabaya.html">Kuliner</a></li>
+          <li class="nav-item2"><a href="#">Beranda</a></li>
+          <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
+          <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
           <li class="nav-item2"><a href="#">Login</a></li>
         </ul>
       </nav>

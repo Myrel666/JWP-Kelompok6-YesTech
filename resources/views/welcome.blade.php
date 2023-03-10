@@ -41,9 +41,9 @@
             <span class="garis"></span>
           </a>
           <ul class="menuzord-menu menuzord-right">
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href="{{ route('destinasi') }}">DESTINASI</a></li>
-            <li><a href="#">KULINER</a></li>
+            <li class="active"><a href="#">Beranda</a></li>
+            <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
+            <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
             <li><a href="#">Login</a></li>
           </ul>
         </div>
