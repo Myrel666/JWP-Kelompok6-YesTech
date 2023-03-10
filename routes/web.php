@@ -22,8 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
-
 // Authentication
 // Register
 Route::get('register', [RegisterController::class, 'index'])->name('register');
@@ -46,3 +44,6 @@ Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name(
 
 // Kontributor
 Route::get('home', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
+
+// Destinasi
+Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
