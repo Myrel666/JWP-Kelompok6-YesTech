@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\KulinerPageController;
 use App\Http\Controllers\AdminController;
@@ -23,8 +24,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
-
 // Authentication
 // Register
 Route::get('register', [RegisterController::class, 'index'])->name('register');
@@ -46,7 +45,13 @@ Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.ku
 Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
 
 // Kontributor
-Route::get('home', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
+Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
+
+//Home Landing Page
+Route::get('home', [HomePageController::class, 'home'])->name('home');
 
 // Destinasi
 Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
+
+// Kuliner
+Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');

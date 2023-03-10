@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinasi</title>
-    <link rel="shortcut icon" href="asset/favicon.png">
+    <link rel="shortcut icon" href="{{ asset ('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,7 +40,7 @@
             alt=""
         /></a>
         <ul class="nav-link">
-          <li class="nav-item2"><a href="#">Beranda</a></li>
+          <li class="nav-item2"><a href="{{ route('home') }}">Home</a></li>
           <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
           <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
           <li class="nav-item2"><a href="#">Login</a></li>
@@ -48,7 +48,7 @@
       </nav>
     </header>
     <div class="destinasi-nav">
-      <p><a href="index.html">Beranda</a> > Destinasi Wisata</p>
+      <p><a href="{{ route('home') }}">Beranda</a> > Destinasi Wisata</p>
     </div>
     <div class="destinasi-judul">
       <h2>DESTINASI WISATA</h2>
@@ -242,7 +242,7 @@
     <div class="row">
       <div class="col-md-4 text-center my-2">
         <a
-          href="museum pendidikan.html"
+          href="#"
         >
           <img
             class="img-fluid"
@@ -385,7 +385,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a href="{{ asset ('css/assets')}}/8.jpg">
           <img
             class="img-fluid"
@@ -402,9 +402,9 @@
             JL. Jendral Basuki Rachmat no.8-12, Surabaya
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a href="{{ asset ('css/assets')}}/9.jpg">
           <img
             class="img-fluid"
@@ -422,9 +422,9 @@
           </h6>
         </div>
       </div>
-    </div>
+    </div> --}}
 
-    <div class="nav-list-page">
+    {{-- <div class="nav-list-page">
       <nav>
         <ul class="pagination">
           <li class="page-item">
@@ -473,7 +473,7 @@
           </li>
         </ul>
       </nav>
-    </div>
+    </div> --}}
 
     <div class="kosong"> <br> </div>
 
