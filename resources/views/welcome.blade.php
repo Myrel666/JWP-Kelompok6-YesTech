@@ -304,7 +304,7 @@
                       >
                         <div class="img-hover">
                           <img
-                            src="{{asset('css/assets')}}asset/balai.jpg"
+                            src="{{asset('css/assets')}}/balai.jpg"
                             class="img-fluid card-img-top img-4"
                           />
                         </div>
