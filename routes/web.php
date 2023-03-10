@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\KulinerPageController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContributorController;
 use App\Http\Controllers\RegisterController;
@@ -23,6 +24,8 @@ Route::get('/', function () {
 });
 
 Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
+Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');
+
 
 // Authentication
 // Register
