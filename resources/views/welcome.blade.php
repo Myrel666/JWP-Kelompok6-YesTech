@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wisata Surabaya</title>
+    <link rel="shortcut icon" href="{{asset('css/assets/favicon.png')}}">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,14 +25,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
   </head>
   <body>
     <nav>
       <div class="layout">
         <div class="logo">
-          {{-- <a href=""><img src="{{ asset('css/asset/logo-white.png')}}" class="putih" /></a> --}}
-          <a href=""><img src="{{ asset('css/assets/logo-black.png')}}" class="black" /></a>
+          <a href=""><img src="{{asset('css/assets/logo-white.png')}}" class="putih" /></a>
         </div>
 
         <div class="menu">
@@ -41,11 +41,10 @@
             <span class="garis"></span>
           </a>
           <ul class="menuzord-menu menuzord-right">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="destinasi.html">DESTINASI</a></li>
-            <li><a href="#">EVENT</a></li>
-            <li><a href="#">AKOMODASI</a></li>
-            <li><a href="#">INFORMASI</a></li>
+            <li class="active"><a href="#">HOME</a></li>
+            <li><a href="{{ route('destinasi') }}">DESTINASI</a></li>
+            <li><a href="#">KULINER</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
         </div>
       </div>
@@ -54,7 +53,7 @@
       <header id="home">
         <div class="overlay"></div>
         <video autoplay muted loop>
-          <source src="{{asset('css/assets/myVideo.mp4')}}" type="video/mp4" />
+          <source src="{{ asset ('css/assets')}}/myVideo.mp4" type="video/mp4" />
         </video>
         <div class="intro">
           <h2>WISATA SURABAYA</h2>
@@ -91,44 +90,44 @@
       <div class="isi">
         <div class="isi-satu">
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-event.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-event.png" alt="" />
             <br />
             <h6>Event</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-maps.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-maps.png" alt="" />
             <br />
             <h6>Peta</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-culinary.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-culinary.png" alt="" />
             <br />
             <h6>Kuliner</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-shopping.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-shopping.png" alt="" />
             <br />
             <h6>Shopping</h6></a
           >
         </div>
         <div class="isi-satu">
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-outdoornature.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-outdoornature.png" alt="" />
             <br />
             <h6>Outdoor</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-hotel.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-hotel.png" alt="" />
             <br />
             <h6>Hotel</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-heritage.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-heritage.png" alt="" />
             <br />
             <h6>Heritage</h6></a
           >
           <a href=""
-            ><img src="{{asset('css/assets')}}/icon-faq.png" alt="" />
+            ><img src="{{ asset ('css/assets')}}/icon-faq.png" alt="" />
             <br />
             <h6>FAQ</h6></a
           >
@@ -149,7 +148,7 @@
                 <div class="col-4">
                   <div class="text-right">
                     <img
-                      src="{{asset('css/assets')}}/icon-360.png"
+                      src="{{ asset ('css/assets')}}/icon-360.png"
                       class="img-fluid text-right img-icon"
                     />
                   </div>
@@ -167,7 +166,7 @@
                       class="w-100"
                       style="object-fit: cover"
                     >
-                      <source src="{{asset('css/assets')}}/Wisata.mp4" type="video/mp4" />
+                      <source src="{{ asset ('css/assets')}}/Wisata.mp4" type="video/mp4" />
                     </video>
                     <div class="video_overlay">
                       <a
@@ -195,7 +194,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="text-center">
-                    <img src="{{asset('css/assets')}}/icon-sign.png" alt="" />
+                    <img src="{{ asset ('css/assets')}}/icon-sign.png" alt="" />
                     <h3 class="title-highlight-dark text-primary">
                       Start Your Best <br />
                       Journey In Surabaya
@@ -218,7 +217,7 @@
                         >
                           <div class="img-hover">
                             <img
-                              src="{{asset('css/assets')}}/Gedung.jpg"
+                              src="{{ asset ('css/assets')}}/Gedung.jpg"
                               class="img-fluid card-img-top img-1"
                             />
                           </div>
@@ -245,7 +244,7 @@
                       >
                         <div class="img-hover">
                           <img
-                            src="{{asset('css/assets')}}/Piala Walikota.png"
+                            src="{{ asset ('css/assets')}}/Piala Walikota.png"
                             class="img-fluid card-img-top img-2"
                           />
                         </div>
@@ -278,7 +277,7 @@
                       >
                         <div class="img-hover">
                           <img
-                            src="{{asset('css/assets')}}/hotel.jpg"
+                            src="{{ asset ('css/assets')}}/hotel.jpg"
                             class="img-fluid card-img-top img-3"
                           />
                         </div>

@@ -1,492 +1,493 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .layout {
-    width: 1000px;
-    margin: auto;
+  width: 1000px;
+  margin: auto;
 }
 
 .layar-penuh {
-    width: 100%;
+  width: 100%;
 }
 
 header .intro {
-    z-index: 100;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 50%;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
 }
 header .intro h3 {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 #aboutus {
-    text-align: center;
+  text-align: center;
 }
 
 nav {
-    z-index: 100;
-    color: #fff;
-    text-align: center;
-    position: absolute;
-    border-bottom: -1px solid #b1b1b1;
-    line-height: 60px;
-    width: 100%;
-    transition: background-color 0.5s ease;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  border-bottom: -1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
 }
 
 nav.putih {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 nav .logo {
-    float: left;
-    position: relative;
-    line-height: 55px;
-    text-align: center;
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
 }
 
 nav .logo img {
-    vertical-align: middle;
-    width: 120px;
+  vertical-align: middle;
+  width: 120px;
 }
 
 nav .menu {
-    float: right;
-    height: 60px;
-    max-width: 600px;
+  float: right;
+  height: 60px;
+  max-width: 600px;
 }
 
 nav .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav .menu ul li {
-    list-style-type: none;
-    float: left;
-    line-height: 60px;
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
 }
 
 nav .menu ul li a {
-    color: #fff;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
 }
 
 /* nav .menu ul li a {
-    color: black;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-  } */
+  color: black;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+} */
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* pengaturan header */
 header {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    z-index: 2;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
 }
 header video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
 }
 
 header .intro {
-    z-index: 100;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 85px;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 85px;
 }
 header .intro h2 {
-    font-size: 75px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 header .intro h3 {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 2px;
-    padding: 0;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 2px;
+  padding: 0;
 }
 
 header .intro h4 {
-    font-size: 35px;
-    color: #000;
-    font-weight: bold;
-    margin: 2px;
-    padding: 0;
+  font-size: 35px;
+  color: #000;
+  font-weight: bold;
+  margin: 2px;
+  padding: 0;
 }
 
 header .intro span {
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
 }
 
 .tombol {
-    background-color: #c86b85;
-    height: 40px;
-    line-height: 42px;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0px 20px 0px 20px;
-    font-size: 15px;
-    border-radius: 4px;
+  background-color: #c86b85;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
 }
 header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 50%;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
 }
 .tombol-menu {
-    position: absolute;
-    top: 1.7rem;
-    right: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
 }
 .tombol-menu .garis {
-    height: 3px;
-    background-color: #fff;
+  height: 3px;
+  background-color: #fff;
 }
 
 nav.putih {
-    background-color: #fff;
+  background-color: #fff;
 }
 nav.putih .tombol-menu .garis {
-    background-color: #333;
+  background-color: #333;
 }
 nav.putih ul li a {
-    color: #333;
+  color: #333;
 }
 nav .logo img.hitam {
-    display: none;
+  display: none;
 }
 
 .icon {
-    display: flex;
-    padding-top: 200px;
-    justify-content: center;
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
 }
 
 .icon a {
-    text-align: center;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 .icon a:hover {
-    background-color: aqua;
+  background-color: aqua;
 }
 .isi {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .isi-satu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .isi-satu a {
-    padding: 10px 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #6868ac;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #6868ac;
 }
 
 .isi-satu a h6 {
-    font-size: 14px;
-    margin: 10px;
+  font-size: 14px;
+  margin: 10px;
 }
 
 /* footer */
 .isi5 {
-    color: white;
-    display: flex;
-    width: 970px;
-    margin: 0 auto;
+  color: white;
+  display: flex;
+  width: 970px;
+  margin: 0 auto;
 }
 
 .isi5-content1 {
-    flex: 242.5px;
-    padding: 0 20px;
+  flex: 242.5px;
+  padding: 0 20px;
 }
 
 .isi5-content2 {
-    flex: 323px;
-    padding: 0 20px;
+  flex: 323px;
+  padding: 0 20px;
 }
 
 .isi5-content3 {
-    flex: 162px;
-    padding: 0 20px;
+  flex: 162px;
+  padding: 0 20px;
 }
 
 .isi5-content4 {
-    flex: 242.5px;
-    padding: 0 20px;
+  flex: 242.5px;
+  padding: 0 20px;
 }
 
 .isi5-content1 .row1 h6 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .isi5-content2 .row1 h6 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .isi5-content3 .row1 h6 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .isi5-content4 .row1 h6 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .h4 {
-    font-size: 40px;
-    font-weight: bold;
-    padding-right: 400px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 400px;
 }
 
 .h4-1 {
-    color: #039be5;
+  color: #039be5;
 }
 
 .h4-2 {
-    color: #ff9800;
+  color: #ff9800;
 }
 
 section .title-highlight {
-    font-size: 40px;
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 footer {
-    padding: 50px 0px 50px 0px;
-    background-color: rgb(62, 38, 119);
-    color: #fff;
+  padding: 50px 0px 50px 0px;
+  background-color: rgb(62, 38, 119);
+  color: #fff;
 }
 /* footer .layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #e7e5e5;
-  } */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #e7e5e5;
+} */
 /* footer .layout div {
-    width: 20%;
-  }
-  footer .layout h5 {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-  footer .h5 .opsi {
-    position: relative;
-    color: #666;
-  } */
+  width: 20%;
+}
+footer .layout h5 {
+  margin-top: 0px;
+  font-size: 20px;
+}
+footer .h5 .opsi {
+  position: relative;
+  color: #666;
+} */
 
 /* footer .layout .copyright {
-    width: 100%;
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid #666;
-    text-align: center;
-  } */
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+} */
 .list1 {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .list1 li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list1 .li1,
 .list1 .li2,
 .list1 .li3 {
-    margin-bottom: 15px;
-    font-size: 14px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .list1 .li1 a {
-    color: white;
+  color: white;
 }
 
 .list1 .li2 a {
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: 900;
-    color: #4a4a8a;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #4a4a8a;
 }
 
 .list1 .li3 a {
-    color: white;
+  color: white;
 }
 
 .list2 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .list2 .li1 {
-    list-style: none;
-    display: flex;
-    margin: 0 auto;
-    height: 105px;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 105px;
 }
 
 .list2 .li1 i {
-    padding-left: 0;
-    padding-right: 50px;
-    margin-top: 7px;
-    width: 20px;
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 7px;
+  width: 20px;
 }
 
 .list2 .li1 p {
-    margin: 0;
-    width: 245px;
+  margin: 0;
+  width: 245px;
 }
 
 .list2 .li2 {
-    list-style: none;
-    display: flex;
-    margin: 0 auto;
-    height: 30px;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 30px;
 }
 
 .list2 .li2 i {
-    padding-left: 0;
-    padding-right: 50px;
-    margin-top: 8px;
-    width: 20px;
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 8px;
+  width: 20px;
 }
 
 .list2 .li2 p {
-    margin: 0;
-    width: 245px;
+  margin: 0;
+  width: 245px;
 }
 
 .list2 .li3 {
-    list-style: none;
-    display: flex;
-    margin: 0 auto;
-    height: 30px;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 30px;
 }
 
 .list2 .li3 i {
-    padding-left: 0;
-    padding-right: 50px;
-    margin-top: 10px;
-    width: 20px;
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 10px;
+  width: 20px;
 }
 
 .list2 .li3 p {
-    margin: 0;
-    width: 245px;
+  margin: 0;
+  width: 245px;
 }
 
 .list3 {
-    padding: 0;
-    margin: 0;
-    width: 138px;
+  padding: 0;
+  margin: 0;
+  width: 138px;
 }
 
 .list3 .li1 {
-    list-style: none;
-    padding-bottom: 10px;
+  list-style: none;
+  padding-bottom: 10px;
 }
 
 .list3 .li1 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 991.98px) {
-    .layout {
-        width: 90%;
-    }
-    nav .menu ul {
-        display: none;
-        margin-top: 60px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    nav .menu ul li {
-        width: 100%;
-        border-bottom: 1px solid #ccc;
-        background-color: #fff;
-        line-height: 40px;
-    }
-    nav .menu ul li a {
-        color: #333;
-    }
-    .tombol-menu {
-        display: flex;
-    }
-    .blog .area {
-        display: block;
-    }
-    .blog div.area div {
-        width: 100%;
-    }
-    .blog .area .gambar {
-        border-radius: 5px 5px 0px 0px;
-        height: 200px;
-    }
-    .support {
-        display: block;
-    }
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
+  .layout {
+    width: 90%;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .menu ul li a {
+    color: #333;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  .blog .area {
+    display: block;
+  }
+  .blog div.area div {
+    width: 100%;
+  }
+  .blog .area .gambar {
+    border-radius: 5px 5px 0px 0px;
+    height: 200px;
+  }
+  .support {
+    display: block;
+  }
+  .support div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }

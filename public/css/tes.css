@@ -1,0 +1,378 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.bg {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 0;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.nav-logo {
+  padding-left: 200px;
+  padding-top: 10px;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  padding-right: 200px;
+  padding-left: 0;
+}
+
+.nav-item a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-item2 a {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-item a:hover,
+.nav-item2 a:hover {
+  color: #6019ff;
+  z-index: 10;
+}
+
+.nav-logo img {
+  width: 100px;
+}
+
+.navbar-destinasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 0;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  z-index: 1000;
+}
+
+.destinasi-nav {
+  padding-top: 3.13rem;
+}
+
+.destinasi-nav p {
+  text-align: center;
+}
+
+.destinasi-nav p a {
+  text-decoration: none;
+  color: #6868ac;
+}
+
+.destinasi-judul h2 {
+  color: #212526;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.destinasi-filter {
+  text-align: center;
+  padding: 0 0;
+}
+
+.destinasi-filter button {
+  color: #6868ac;
+  background-color: #fff;
+  font-weight: 900;
+  border: 1px solid black;
+  border-radius: 0;
+  margin: 0 0;
+  padding: 2.5px 0;
+  width: 300px;
+}
+
+.destinasi-filter .filter {
+  color: #fff;
+  background-color: #6868ac;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.destinasi-filter button:hover {
+  background-color: #dedede;
+  color: #6868ac;
+}
+
+.navbar-kuliner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 0;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  z-index: 1000;
+}
+
+.kuliner-nav {
+  padding-top: 3.13rem;
+}
+
+.kuliner-nav p {
+  text-align: center;
+}
+
+.kuliner-nav p a {
+  text-decoration: none;
+  color: #6868ac;
+}
+
+.kuliner-judul h2 {
+  color: #212526;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.kuliner-filter {
+  text-align: center;
+  padding: 0 0;
+}
+
+.kuliner-filter button {
+  color: #6868ac;
+  background-color: #fff;
+  font-weight: 900;
+  border: 1px solid black;
+  border-radius: 0;
+  margin: 0 0;
+  padding: 2.5px 0;
+  width: 300px;
+}
+
+.kuliner-filter .filter {
+  color: #fff;
+  background-color: #6868ac;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.kuliner-filter button:hover {
+  background-color: #dedede;
+  color: #6868ac;
+}
+
+.img-fluid {
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+}
+
+.img-fluid-kuliner {
+  width: 290px;
+  height: 290px;
+  border-radius: 10px 100px;
+}
+
+.span-kategori {
+  color: #fff;
+  font-weight: 600;
+  background-color: #686898;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-list-page {
+  margin-top: 100px;
+}
+
+.nav-list-page nav ul {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.nav-list-page nav ul li a {
+  color: black;
+  font-weight: 600;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  color: white;
+  z-index: 100;
+}
+
+.isi-footer {
+  color: white;
+  display: flex;
+  width: 970px;
+  margin: 0 auto;
+}
+
+.isifoot-content1 {
+  flex: 242.5px;
+  padding: 0 20px;
+}
+
+.isifoot-content2 {
+  flex: 323px;
+  padding: 0 20px;
+}
+
+.isifoot-content3 {
+  flex: 162px;
+  padding: 0 20px;
+}
+
+.isifoot-content4 {
+  flex: 242.5px;
+  padding: 0 20px;
+}
+
+.isifoot-content1 .row1 h6 {
+  font-size: 18px;
+}
+
+.isifoot-content2 .row1 h6 {
+  font-size: 18px;
+}
+
+.isifoot-content3 .row1 h6 {
+  font-size: 18px;
+}
+
+.isifoot-content4 .row1 h6 {
+  font-size: 18px;
+}
+
+.list1 {
+  list-style: none;
+  padding: 0;
+}
+
+.list1 li a {
+  text-decoration: none;
+}
+
+.list1 .li1,
+.list1 .li2,
+.list1 .li3 {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.list1 .li1 a {
+  color: white;
+}
+
+.list1 .li2 a {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #4a4a8a;
+}
+
+.list1 .li3 a {
+  color: white;
+}
+
+.list2 {
+  margin: 0;
+  padding: 0;
+}
+
+.list2 .li1 {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 105px;
+}
+
+.list2 .li1 i {
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 7px;
+  width: 20px;
+}
+
+.list2 .li1 p {
+  margin: 0;
+  width: 245px;
+}
+
+.list2 .li2 {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.list2 .li2 i {
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 8px;
+  width: 20px;
+}
+
+.list2 .li2 p {
+  margin: 0;
+  width: 245px;
+}
+
+.list2 .li3 {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.list2 .li3 i {
+  padding-left: 0;
+  padding-right: 50px;
+  margin-top: 10px;
+  width: 20px;
+}
+
+.list2 .li3 p {
+  margin: 0;
+  width: 245px;
+}
+
+.list3 {
+  padding: 0;
+  margin: 0;
+  width: 138px;
+}
+
+.list3 .li1 {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.list3 .li1 a {
+  text-decoration: none;
+  color: white;
+}
