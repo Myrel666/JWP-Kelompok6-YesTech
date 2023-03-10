@@ -28,14 +28,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="tes.css" />
+    <link rel="stylesheet" href="{{asset('css/tes.css')}}" />
   </head>
   <body>
     <header>
       <nav class="navbar-kuliner">
         <a href="" class="nav-logo"
           ><img
-            src="asset/logo-white.png"
+            src="{{asset('css/assets')}}/logo-white.png"
             alt=""
         /></a>
         <ul class="nav-link">
@@ -245,7 +245,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/rawon-kalkulator.jpg"
+            src="{{ asset ('css/assets')}}/rawon-kalkulator.jpg"
             alt="Rawon Kalkulator"
           />
         </a>
@@ -266,7 +266,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/kartiko-traditional.jpg"
+            src="{{ asset ('css/assets')}}/kartiko-traditional.jpg"
             alt="KARTIKO Traditional"
           />
         </a>
@@ -287,7 +287,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/G-WALK.jpg"
+            src="{{ asset ('css/assets')}}/G-WALK.jpg"
             alt="G-WALK"
           />
         </a>
@@ -308,7 +308,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/sate-kelopo.jpg"
+            src="{{ asset ('css/assets')}}/sate-kelopo.jpg"
             alt="Sate Kelopo"
           />
         </a>
@@ -327,7 +327,7 @@
         <a href="https://goo.gl/maps/5EKT9nickJmDDbEj6">
           <img
             class="img-fluid-kuliner"
-            src="asset/es-coklat.jpg"
+            src="{{ asset ('css/assets')}}/es-coklat.jpg"
             alt="Es Coklat Tambah Umur"
           />
         </a>
@@ -348,7 +348,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/es-campur.jpg"
+            src="{{ asset ('css/assets')}}/es-campur.jpg"
             alt="Es Campur Tidar"
           />
         </a>
@@ -369,7 +369,7 @@
         >
           <img
             class="img-fluid-kuliner"
-            src="asset/bratang-binangun.jpg"
+            src="{{ asset ('css/assets')}}/bratang-binangun.jpg"
             alt="Sentra Wisata Kuliner Bratang Binangun"
           />
         </a>
