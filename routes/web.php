@@ -36,7 +36,7 @@ Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 
 // Administrator
-Route::get('beranda', [AdminController::class, 'index'])->middleware('auth')->name('admin.beranda');
+Route::get('Beranda', [AdminController::class, 'index'])->middleware('auth')->name('admin.beranda');
 // Administrator-Destinasi
 Route::get('admin/destinasi', [AdminController::class, 'destinasi'])->name('admin.destinasi');
 Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->name('admin.destinasi.form');
@@ -46,12 +46,15 @@ Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name(
 
 // Kontributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
+// Administrator-Destinasi
+Route::get('contributor/destinasi', [ContributorController::class, 'destinasi'])->name('contributor.destinasi');
+Route::get('contributor/destinasi/form', [ContributorController::class, 'destinasiForm'])->name('contributor.destinasi.form');
 
 //Home Landing Page
 Route::get('home', [HomePageController::class, 'home'])->name('home');
 
-// Destinasi
+// Destinasi Page
 Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
 
-// Kuliner
+// Kuliner Page
 Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');

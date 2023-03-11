@@ -44,7 +44,7 @@
             <li class="active"><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
             <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="{{ route('auth') }}">Login</a></li>
           </ul>
         </div>
       </div>
@@ -63,7 +63,7 @@
             called City of Heroes</span
           >
           <div class="icon">
-            <a class="a1" href=""
+            <a class="a1" href="{{ route('destinasi') }}"
               ><i class="fa-solid fa-map-location-dot"></i><br />
               Destinasi <br />
               Wisata</a

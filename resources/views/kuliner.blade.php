@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KULINER SURABAYA</title>
-    <link rel="shortcut icon" href="asset/favicon.png">
+    <title>Kuliner Surabaya</title>
+    <link rel="shortcut icon" href="{{asset('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,15 +39,15 @@
             alt=""
         /></a>
         <ul class="nav-link">
-          <li class="nav-item2"><a href="index.html">Beranda</a></li>
-          <li class="nav-item2"><a href="destinasi.html">Destinasi</a></li>
-          <li class="nav-item2"><a href="#">Kuliner</a></li>
-          <li class="nav-item2"><a href="#">Login</a></li>
+          <li class="nav-item2"><a href="{{ route('home') }}">Home</a></li>
+          <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
+          <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
+          <li class="nav-item2"><a href="{{ route('auth') }}">Login</a></li>
         </ul>
       </nav>
     </header>
     <div class="kuliner-nav">
-      <p><a href="index.html">Beranda</a> > Kuliner Surabaya</p>
+      <p><a href="{{ route('home') }}">Beranda</a> > Kuliner Surabaya</p>
     </div>
     <div class="kuliner-judul">
       <h2>KULINER SURABAYA</h2>

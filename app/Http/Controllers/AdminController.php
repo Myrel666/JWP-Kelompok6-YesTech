@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
-
     // show dashboard
     public function index()
     {
