@@ -24,13 +24,21 @@ class ContributorController extends Controller
     {
         return view('contributor.destinasi');
     }
+    // public function insertdestinasi(Request $request){
+    //     $data = Destination::create($request->all());
+    //     if($request->hasFile('foto')){
+    //         $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
+    //         $data->foto = $request->file('foto')->getClientOriginalName();
+    //         $data->save();
+    //     }
+    //     return redirect()->route('data_destinasi');
+    // }
 
     // show tambah destinasi
     public function destinasiForm()
     {
         return view('contributor.destinasiform');
     }
-
     // show navigasi kuliner
     public function kuliner()
     {
@@ -38,7 +46,7 @@ class ContributorController extends Controller
     }
 
     // show navigasi kuliner
-    public function kulinerForm()
+    public function kulinerform()
     {
         return view('contributor.kulinerform');
     }

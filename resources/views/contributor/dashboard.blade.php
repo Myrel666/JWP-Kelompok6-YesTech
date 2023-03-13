@@ -38,7 +38,7 @@
                   </div>
                 </div>
               </div>
-              {{-- <div class="col-sm-4 grid-margin">
+              <div class="col-sm-4 grid-margin">
                 <div class="card">
                   <div class="card-body">
                     <h5>Kuliner</h5>
@@ -54,7 +54,7 @@
                     </div>
                   </div>
                 </div>
-              </div> --}}
+              </div>
             </div>
             
           <!-- content-wrapper ends -->
