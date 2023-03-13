@@ -17,7 +17,8 @@ class ContributorController extends Controller
         {
             $user = User::all();
             $destinasi = Destination::all();
-        return view('contributor.dashboard', compact('user', 'destinasi'));
+            $kuliner = Kuliner::all();
+        return view('contributor.dashboard', compact('user', 'destinasi', 'kuliner'));
         }
             // show navigasi destinasi
     public function destinasi()
