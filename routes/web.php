@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomePageController;
-use App\Http\Controllers\GuestController;
+use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KulinerPageController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContributorController;
@@ -54,7 +54,7 @@ Route::get('contributor/destinasi/form', [ContributorController::class, 'destina
 Route::get('home', [HomePageController::class, 'home'])->name('home');
 
 // Destinasi Page
-Route::get('destinasi', [GuestController::class, 'destinasi'])->name('destinasi');
+Route::get('destinasi', [DestinasiController::class, 'destinasi'])->name('destinasi');
 
 // Kuliner Page
 Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');
