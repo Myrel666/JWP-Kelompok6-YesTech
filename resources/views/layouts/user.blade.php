@@ -100,7 +100,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('contributor.kuliner') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-pizza"></i>
               </span>

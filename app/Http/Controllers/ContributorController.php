@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Destination;
+use App\Models\Kuliner;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -28,5 +29,17 @@ class ContributorController extends Controller
     public function destinasiForm()
     {
         return view('contributor.destinasiform');
+    }
+
+    // show navigasi kuliner
+    public function kuliner()
+    {
+        return view('contributor.kuliner');
+    }
+
+    // show navigasi kuliner
+    public function kulinerForm()
+    {
+        return view('contributor.kulinerform');
     }
 }

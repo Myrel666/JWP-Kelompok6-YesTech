@@ -46,9 +46,12 @@ Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name(
 
 // Kontributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
-// Administrator-Destinasi
+// Kontributor-Destinasi
 Route::get('contributor/destinasi', [ContributorController::class, 'destinasi'])->name('contributor.destinasi');
 Route::get('contributor/destinasi/form', [ContributorController::class, 'destinasiForm'])->name('contributor.destinasi.form');
+// Kontributor-Kuliner
+Route::get('contributor/kuliner', [ContributorController::class, 'kuliner'])->name('contributor.kuliner');
+Route::get('contributor/kuliner/form', [ContributorController::class, 'kulinerForm'])->name('contributor.kuliner.form');
 
 //Home Landing Page
 Route::get('home', [HomePageController::class, 'home'])->name('home');
