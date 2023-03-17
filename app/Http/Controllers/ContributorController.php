@@ -32,6 +32,11 @@ class ContributorController extends Controller
     {
         return view('contributor.destinasiform');
     }
+    public function tampilkandestinasi($id){
+        $destinasi = Destination::find($id);
+        // dd($data);
+        return view('tampildestinasi',compact('data'));
+    }
     public function insertdestinasi(Request $request){
         // dd($request);
     $destinasi = Destination::create($request->all());
@@ -56,7 +61,7 @@ class ContributorController extends Controller
         $destinasi->deskripsi = $request->deskripsi;
 
         $destinasi->save();
-        return redirect()->route('contributor.destinasi');
+        return redirect()->route('contributor.datadestinasi');
         
      }
     // show navigasi kuliner

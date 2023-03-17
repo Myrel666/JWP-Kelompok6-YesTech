@@ -30,11 +30,10 @@ class CreateDestinationsTable extends Migration
                 'Monumen & Landmark'
             ]);
             $table->string('foto');
-            $table->string('alamat');
-            $table->text('deskripsi');
-            // $table->string('address', 255)->nullable();
-            // $table->string('address_url', 255)->nullable();
-            // $table->unsignedBigInteger('area_id');
+            $table->text('description');
+            $table->string('address', 255)->nullable();
+            $table->string('address_url', 255)->nullable();
+            $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
             $table->foreign('area_id')->references('id')->on('areas');
