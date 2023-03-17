@@ -33,13 +33,14 @@ class ContributorController extends Controller
         return view('contributor.destinasiform');
     }
     public function insertdestinasi(Request $request){
+        // dd($request);
     $destinasi = Destination::create($request->all());
     if($request->hasFile('foto')){
         $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
         $destinasi->foto = $request->file('foto')->getClientOriginalName();
         $destinasi->save();
         }
-        return redirect()->route('contributor.destinasi');
+        return redirect()->route('contributor.datadestinasi');
     }
     
     public function updatedestinasi(Request $request, $id){ 

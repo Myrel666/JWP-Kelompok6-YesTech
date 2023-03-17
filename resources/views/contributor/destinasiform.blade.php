@@ -30,11 +30,11 @@
           <form class="forms-sample">
             <div class="form-group">
               <label for="exampleInputName1">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Name">
+              <input name='name' type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="exampleSelectGender">Wilayah</label>
-              <select class="form-control" id="exampleSelectGender">
+              <select name='area_id' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
                   <option value="1">History & Heritage</option>
                   <option value="2">museum</option>
@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputCity1">Kategori</label>
-              <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+              <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">
               <label>File upload</label>
@@ -65,7 +65,7 @@
             </div>
             <div class="form-group">
               <label for="exampleTextarea1">Deskripsi</label>
-              <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+              <textarea name='description' class="form-control" id="exampleTextarea1" rows="4"></textarea>
             </div>
             <div class="row justify-content-end">
               <a href="{{ route('contributor.datadestinasi') }}" class="btn btn-secondary mr-2">Cancel</a>
