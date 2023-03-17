@@ -23,6 +23,8 @@
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
+          <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
+            @csrf
           <h4 class="card-title">Destination Form Input</h4>
           <p class="card-description"> Input Below Here </p>
           <form class="forms-sample">
@@ -33,8 +35,18 @@
             <div class="form-group">
               <label for="exampleSelectGender">Wilayah</label>
               <select class="form-control" id="exampleSelectGender">
-                <option>Male</option>
-                <option>Female</option>
+                <option selected>Pilih Kategori</option>
+                  <option value="1">History & Heritage</option>
+                  <option value="2">museum</option>
+                  <option value="3">religi</option>
+                  <option value="4">Outdoor & Nature</option>
+                  <option value="5">Pusat Perbelanjaan</option>
+                  <option value="6">Pasar Tradisional</option>
+                  <option value="7">Kampung Wisata</option>
+                  <option value="8">Sport</option>
+                  <option value="9">Cagar Budaya</option>
+                  <option value="10">City Park</option>
+                  <option value="11">Monumen & Landmark</option>
               </select>
             </div>
             <div class="form-group">

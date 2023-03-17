@@ -35,7 +35,7 @@
                             <td>12 May 2017</td>
                             <td>
                                 <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-secondary">Detail</button>
+                                {{-- <button type="button" class="btn btn-secondary">Detail</button> --}}
                             </td>
                           </tr>
                         </tbody>

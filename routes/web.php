@@ -49,6 +49,11 @@ Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth
 // Kontributor-Destinasi
 Route::get('contributor/destinasi', [ContributorController::class, 'destinasi'])->name('contributor.destinasi');
 Route::get('contributor/destinasi/form', [ContributorController::class, 'destinasiForm'])->name('contributor.destinasi.form');
+//CRUD Destinasi
+Route::post('/insertdestinasi',[ContributorController::class, 'insertdestinasi'])->name('insertdestinasi');
+Route::post('/updatedestinasi/{id}',[ContributorController::class, 'updatedestinasi'])->name('updatedestinasi');
+
+
 // Kontributor-Kuliner
 Route::get('contributor/kuliner', [ContributorController::class, 'kuliner'])->name('contributor.kuliner');
 Route::get('contributor/kuliner/form', [ContributorController::class, 'kulinerForm'])->name('contributor.kuliner.form');

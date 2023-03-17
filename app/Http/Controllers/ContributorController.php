@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Category;
 use App\Models\Destination;
 use App\Models\Kuliner;
 use App\Http\Controllers\Controller;
@@ -25,21 +26,38 @@ class ContributorController extends Controller
     {
         return view('contributor.destinasi');
     }
-    // public function insertdestinasi(Request $request){
-    //     $data = Destination::create($request->all());
-    //     if($request->hasFile('foto')){
-    //         $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
-    //         $data->foto = $request->file('foto')->getClientOriginalName();
-    //         $data->save();
-    //     }
-    //     return redirect()->route('data_destinasi');
-    // }
 
     // show tambah destinasi
     public function destinasiForm()
     {
         return view('contributor.destinasiform');
     }
+    public function insertdestinasi(Request $request){
+    $destinasi = Destination::create($request->all());
+    if($request->hasFile('foto')){
+        $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
+        $destinasi->foto = $request->file('foto')->getClientOriginalName();
+        $destinasi->save();
+        }
+        return redirect()->route('contributor.destinasi');
+    }
+    
+    public function updatedestinasi(Request $request, $id){ 
+        // dd($request->file('foto')->getClientOriginalName());
+        $destinasi = Destination::find($id);
+        if ($request->hasFile('foto')){
+            $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
+            $destinasi->foto = $request->file('foto')->getClientOriginalName();
+        }
+        $destinasi->nama = $request->nama;
+        $destinasi->kategori = $request->kategori;
+        $destinasi->alamat = $request->alamat;
+        $destinasi->deskripsi = $request->deskripsi;
+
+        $destinasi->save();
+        return redirect()->route('contributor.destinasi');
+        
+     }
     // show navigasi kuliner
     public function kuliner()
     {

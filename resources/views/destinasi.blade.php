@@ -242,7 +242,7 @@
     <div class="row">
       <div class="col-md-4 text-center my-2">
         <a
-          href="{{ asset ('css/assets')}}/1.jpg"
+          href="#"
         >
           <img
             class="img-fluid"
@@ -261,28 +261,31 @@
         </div>
       </div>
 
+      {{-- @foreach ($destinasi as $row)
       <div class="col-md-4 text-center my-2">
         <a
-          href="{{ asset ('css/assets')}}/2.jpg"
+          href="#"
         >
           <img
             class="img-fluid"
-            src="{{ asset ('css/assets')}}/2.jpg"
-            alt="Museum Olahraga Surabaya"
+            src="{{asset('fotodestinasi/'.$row->foto)}}"
+            alt="{{$row->nama}}"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori"> Museum </span>
+          <span class="span-kategori">{{$row->kategori}}</span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">Museum Olahraga Surabaya</h5>
+          <h5 class="font-weight-bold">{{$row->nama}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Indragiri No.6, Gelora Pancasila
+            {{$row->alamat}}
           </h6>
         </div>
       </div>
+      @endforeach --}}
 
-      <div class="col-md-4 text-center my-2">
+
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ asset ('css/assets')}}/3.jpg"
         >
@@ -301,9 +304,9 @@
             Jl. Masjid Agung Timur No.1
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ asset ('css/assets')}}/4.jpg"
         >
@@ -322,9 +325,9 @@
             Jl. Maspati Gg. VI, Bubutan
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a href="{{ asset ('css/assets')}}/5.jpg">
           <img
             class="img-fluid"
@@ -341,9 +344,9 @@
             Jalan Wiyung Praja, Wiyung
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ asset ('css/assets')}}/6.jpg"
         >
@@ -362,9 +365,9 @@
             Jl. Setail No. 1, Darmo, Wonokromo
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ asset ('css/assets')}}/7.jpg"
         >
@@ -383,7 +386,7 @@
             Jl. Pahlawan
           </h6>
         </div>
-      </div>
+      </div> --}}
 
       {{-- <div class="col-md-4 text-center my-2">
         <a href="{{ asset ('css/assets')}}/8.jpg">
