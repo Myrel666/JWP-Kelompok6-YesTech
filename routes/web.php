@@ -47,7 +47,7 @@ Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name(
 // Kontributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
 // Kontributor-Destinasi
-Route::get('contributor/destinasi', [ContributorController::class, 'destinasi'])->name('contributor.destinasi');
+Route::get('contributor/datadestinasi', [ContributorController::class, 'datadestinasi'])->name('contributor.datadestinasi');
 Route::get('contributor/destinasi/form', [ContributorController::class, 'destinasiForm'])->name('contributor.destinasi.form');
 //CRUD Destinasi
 Route::post('/insertdestinasi',[ContributorController::class, 'insertdestinasi'])->name('insertdestinasi');

@@ -22,9 +22,9 @@ class ContributorController extends Controller
         return view('contributor.dashboard', compact('user', 'destinasi', 'kuliner'));
         }
             // show navigasi destinasi
-    public function destinasi()
+    public function datadestinasi()
     {
-        return view('contributor.destinasi');
+        return view('contributor.datadestinasi');
     }
 
     // show tambah destinasi

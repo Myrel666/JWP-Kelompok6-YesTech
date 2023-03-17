@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('contributor.destinasi') }}">
+            <a class="nav-link" href="{{ route('contributor.datadestinasi') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-map"></i>
               </span>
