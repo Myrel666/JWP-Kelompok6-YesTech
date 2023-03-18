@@ -260,28 +260,30 @@
         </div>
       </div>
 
+      @foreach ($kuliner as $row)
       <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/1qBBGx1dsvhfnKBVA"
+          href="#"
         >
           <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/kartiko-traditional.jpg"
-            alt="KARTIKO Traditional"
+            class="img-fluid"
+            src="{{asset('fotokuliner/'.$row->foto)}}"
+            alt="{{$row->name}}"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori"> Kuliner </span>
+          <span class="span-kategori">{{$row->address}}</span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">KARTIKO Traditional</h5>
+          <h5 class="font-weight-bold">{{$row->name}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Raya Darmo Permai I No.45 - 47
+            {{$row->kategori}}
           </h6>
         </div>
       </div>
+      @endforeach
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/1aFS9ykFx3iBsabF8"
         >
@@ -300,9 +302,9 @@
             Ruko Taman Gapura, Jl. Niaga Gapura No.14
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/9y86EMNGgCmFtc8E9"
         >
@@ -321,9 +323,9 @@
             Jl. Walikota Mustajab No.36
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a href="https://goo.gl/maps/5EKT9nickJmDDbEj6">
           <img
             class="img-fluid-kuliner"
@@ -340,9 +342,9 @@
             Jl. Simokerto No.49, Simokerto
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/wsHTQ7beYUNcTfLv8"
         >
@@ -361,9 +363,9 @@
             Jl. Tidar, Sawahan
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/TRSE3yvyYx44eA3g6"
         >
@@ -382,7 +384,7 @@
             Jl. Raya Manyar No.80A, Baratajaya
           </h6>
         </div>
-      </div>
+      </div> --}}
 
       <!-- <div class="col-md-4 text-center my-2">
         <a href="asset/8.jpg">

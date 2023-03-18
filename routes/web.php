@@ -44,6 +44,7 @@ Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->n
 Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
 Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
 
+
 // Kontributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
 // Kontributor-Destinasi
@@ -52,19 +53,23 @@ Route::get('contributor/destinasi/form', [ContributorController::class, 'destina
 //CRUD Destinasi
 Route::post('/insertdestinasi',[ContributorController::class, 'insertdestinasi'])->name('insertdestinasi');
 Route::post('/updatedestinasi/{id}',[ContributorController::class, 'updatedestinasi'])->name('updatedestinasi');
-//CRUD Destinasi
 Route::get('/editdestinasi/{id}',[ContributorController::class, 'editdestinasi'])->name('editdestinasi');
 
-
 // Kontributor-Kuliner
-Route::get('contributor/kuliner', [ContributorController::class, 'kuliner'])->name('contributor.kuliner');
+Route::get('contributor/datakuliner', [ContributorController::class, 'datakuliner'])->name('contributor.datakuliner');
 Route::get('contributor/kuliner/form', [ContributorController::class, 'kulinerForm'])->name('contributor.kuliner.form');
+//CRUD Kuliner
+Route::post('/insertkuliner',[ContributorController::class, 'insertkuliner'])->name('insertkuliner');
+Route::post('/updatekuliner/{id}',[ContributorController::class, 'updatekuliner'])->name('updatekuliner');
+Route::get('/editkuliner/{id}',[ContributorController::class, 'editkuliner'])->name('editkuliner');
 
+
+
+
+//Templating View
 //Home Landing Page
 Route::get('home', [HomePageController::class, 'home'])->name('home');
-
 // Destinasi Page
 Route::get('destinasi', [DestinasiController::class, 'destinasi'])->name('destinasi');
-
 // Kuliner Page
 Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');

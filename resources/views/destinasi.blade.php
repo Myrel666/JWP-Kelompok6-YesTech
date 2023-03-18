@@ -278,7 +278,7 @@
           <h5 class="font-weight-bold">{{$row->name}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            {{$row->area_id}}
+            {{$row->kategori}}
           </h6>
         </div>
       </div>

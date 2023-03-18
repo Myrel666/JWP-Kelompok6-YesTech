@@ -58,17 +58,19 @@ class ContributorController extends Controller
         }
         $destinasi->name = $request->name;
         $destinasi->address = $request->address;
-        $destinasi->area_id = $request->area_id;
+        $destinasi->kategori = $request->kategori;
         $destinasi->description = $request->description;
 
         $destinasi->save();
         return redirect()->route('contributor.datadestinasi');
-        
      }
+
+     
     // show navigasi kuliner
-    public function kuliner()
+    public function datakuliner()
     {
-        return view('contributor.kuliner');
+        $kuliner = Kuliner::all();
+        return view('contributor.datakuliner',compact('kuliner'));
     }
 
     // show navigasi kuliner
@@ -76,4 +78,35 @@ class ContributorController extends Controller
     {
         return view('contributor.kulinerform');
     }
+    public function insertkuliner(Request $request){
+        // dd($request);
+    $kuliner = Kuliner::create($request->all());
+    if($request->hasFile('foto')){
+        $request->file('foto')->move('fotokuliner/',$request->file('foto')->getClientOriginalName());
+        $kuliner->foto = $request->file('foto')->getClientOriginalName();
+        $kuliner->save();
+        }
+        return redirect()->route('contributor.datakuliner');
+    }
+
+    public function editkuliner($id){
+        $kuliner = Kuliner::find($id);
+        // dd($data);
+        return view('contributor.editkuliner',compact('kuliner'));
+    }
+    public function updatekuliner(Request $request, $id){ 
+        // dd($request->file('foto')->getClientOriginalName());
+        $kuliner = Kuliner::find($id);
+        if ($request->hasFile('foto')){
+            $request->file('foto')->move('fotokuliner/',$request->file('foto')->getClientOriginalName());
+            $kuliner->foto = $request->file('foto')->getClientOriginalName();
+        }
+        $kuliner->name = $request->name;
+        $kuliner->address = $request->address;
+        $kuliner->kategori = $request->kategori;
+        $kuliner->description = $request->description;
+
+        $kuliner->save();
+        return redirect()->route('contributor.datakuliner');
+     }
 }

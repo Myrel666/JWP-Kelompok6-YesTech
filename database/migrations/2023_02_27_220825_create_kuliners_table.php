@@ -16,6 +16,7 @@ class CreateKulinersTable extends Migration
         Schema::create('kuliners', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->enum('kategori',['Kuliner','Minuman']);
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->unsignedBigInteger('area_id');

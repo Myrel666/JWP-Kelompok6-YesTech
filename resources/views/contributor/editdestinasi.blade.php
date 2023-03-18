@@ -34,24 +34,24 @@
             </div>
             <div class="form-group">
               <label for="exampleSelectGender">Wilayah</label>
-              <select name='area_id' class="form-control" id="exampleSelectGender">
+              <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
-                  <option value="1">History & Heritage</option>
-                  <option value="2">museum</option>
-                  <option value="3">religi</option>
-                  <option value="4">Outdoor & Nature</option>
-                  <option value="5">Pusat Perbelanjaan</option>
-                  <option value="6">Pasar Tradisional</option>
-                  <option value="7">Kampung Wisata</option>
-                  <option value="8">Sport</option>
-                  <option value="9">Cagar Budaya</option>
-                  <option value="10">City Park</option>
-                  <option value="11">Monumen & Landmark</option>
+                <option>History & Heritage</option>
+                    <option>museum</option>
+                    <option>religi</option>
+                    <option>Outdoor & Nature</option>
+                    <option>Pusat Perbelanjaan</option>
+                    <option>Pasar Tradisional</option>
+                    <option>Kampung Wisata</option>
+                    <option>Sport</option>
+                    <option>Cagar Budaya</option>
+                    <option>City Park</option>
+                    <option>Monumen & Landmark</option>
               </select>
             </div>
             <div class="form-group">
               <label for="exampleInputCity1">Kategori</label>
-              <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+              <input name='kategori' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">
               <label>File upload</label>
