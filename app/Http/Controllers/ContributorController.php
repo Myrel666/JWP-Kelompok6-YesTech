@@ -24,18 +24,14 @@ class ContributorController extends Controller
             // show navigasi destinasi
     public function datadestinasi()
     {
-        return view('contributor.datadestinasi');
+        $destinasi = Destination::all();
+        return view('contributor.datadestinasi', compact('destinasi'));
     }
 
     // show tambah destinasi
     public function destinasiForm()
     {
         return view('contributor.destinasiform');
-    }
-    public function tampilkandestinasi($id){
-        $destinasi = Destination::find($id);
-        // dd($data);
-        return view('tampildestinasi',compact('data'));
     }
     public function insertdestinasi(Request $request){
         // dd($request);
@@ -48,6 +44,11 @@ class ContributorController extends Controller
         return redirect()->route('contributor.datadestinasi');
     }
     
+    public function editdestinasi($id){
+        $destinasi = Destination::find($id);
+        // dd($data);
+        return view('contributor.editdestinasi',compact('destinasi'));
+    }
     public function updatedestinasi(Request $request, $id){ 
         // dd($request->file('foto')->getClientOriginalName());
         $destinasi = Destination::find($id);
@@ -55,10 +56,10 @@ class ContributorController extends Controller
             $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
             $destinasi->foto = $request->file('foto')->getClientOriginalName();
         }
-        $destinasi->nama = $request->nama;
-        $destinasi->kategori = $request->kategori;
-        $destinasi->alamat = $request->alamat;
-        $destinasi->deskripsi = $request->deskripsi;
+        $destinasi->name = $request->name;
+        $destinasi->address = $request->address;
+        $destinasi->area_id = $request->area_id;
+        $destinasi->description = $request->description;
 
         $destinasi->save();
         return redirect()->route('contributor.datadestinasi');

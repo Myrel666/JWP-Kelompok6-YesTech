@@ -261,7 +261,7 @@
         </div>
       </div>
 
-      {{-- @foreach ($destinasi as $row)
+      @foreach ($destinasi as $row)
       <div class="col-md-4 text-center my-2">
         <a
           href="#"
@@ -269,20 +269,20 @@
           <img
             class="img-fluid"
             src="{{asset('fotodestinasi/'.$row->foto)}}"
-            alt="{{$row->nama}}"
+            alt="{{$row->name}}"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">{{$row->kategori}}</span>
+          <span class="span-kategori">{{$row->address}}</span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">{{$row->nama}}</h5>
+          <h5 class="font-weight-bold">{{$row->name}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            {{$row->alamat}}
+            {{$row->area_id}}
           </h6>
         </div>
       </div>
-      @endforeach --}}
+      @endforeach
 
 
       {{-- <div class="col-md-4 text-center my-2">

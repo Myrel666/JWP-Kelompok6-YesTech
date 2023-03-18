@@ -33,19 +33,18 @@
                         <tbody>
                           @foreach ($destinasi as $row)
                           <tr>
-                            <td>{{$row->nama}}</td>
-                            <td>{{$row->kategori}}</td>
+                            <td>{{$row->name}}</td>
+                            <td>{{$row->address}}</td>
                             <td>
                               <img src="{{asset('fotodestinasi/'.$row->foto)}}" alt="" style="width:50px;">
                             </td>
-                            <td>{{$row->alamat}}</td>
-                            <td>{{$row->deskripsi}}</td>
+                            <td>{{$row->area_id}}</td>
+                            <td>{{$row->description}}</td>
                             <td>
-                            <a href="/tampilkandestinasi/{{$row->id}}" class="btn btn-warning mb-2">Edit</a>
+                            <a href="/editdestinasi/{{$row->id}}" class="btn btn-warning mb-2">Edit</a>
                             </td>
                           </tr>
                           @endforeach
-                          
                         </tbody>
                       </table>
                     </div>

@@ -52,6 +52,8 @@ Route::get('contributor/destinasi/form', [ContributorController::class, 'destina
 //CRUD Destinasi
 Route::post('/insertdestinasi',[ContributorController::class, 'insertdestinasi'])->name('insertdestinasi');
 Route::post('/updatedestinasi/{id}',[ContributorController::class, 'updatedestinasi'])->name('updatedestinasi');
+//CRUD Destinasi
+Route::get('/editdestinasi/{id}',[ContributorController::class, 'editdestinasi'])->name('editdestinasi');
 
 
 // Kontributor-Kuliner

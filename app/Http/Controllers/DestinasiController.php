@@ -11,7 +11,8 @@ class DestinasiController extends Controller
     //
     public function destinasi()
         {
-        return view('destinasi');
+        $destinasi = Destination::all();
+        return view('destinasi', compact('destinasi'));
         }
         
 }
