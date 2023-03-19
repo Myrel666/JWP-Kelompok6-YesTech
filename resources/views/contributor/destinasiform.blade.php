@@ -33,24 +33,24 @@
               <input name='name' type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
-              <label for="exampleSelectGender">Wilayah</label>
+              <label for="exampleSelectGender">Kategori</label>
               <select name='kategori' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
-                  <option>History & Heritage</option>
-                  <option>museum</option>
-                  <option>religi</option>
-                  <option>Outdoor & Nature</option>
-                  <option>Pusat Perbelanjaan</option>
-                  <option>Pasar Tradisional</option>
-                  <option>Kampung Wisata</option>
-                  <option>Sport</option>
-                  <option>Cagar Budaya</option>
-                  <option>City Park</option>
-                  <option>Monumen & Landmark</option>
+                <option value="History & Heritage">History & Heritage</option>
+                <option value="museum">museum</option>
+                <option value="religi">religi</option>
+                <option value="Outdoor & Nature">Outdoor & Nature</option>
+                <option value="Pusat Perbelanjaan">Pusat Perbelanjaan</option>
+                <option value="Pasar Tradisional">Pasar Tradisional</option>
+                <option value="Kampung Wisata">Kampung Wisata</option>
+                <option value="Sport">Sport</option>
+                <option value="Cagar Budaya">Cagar Budaya</option>
+                <option value="City Park">City Park</option>
+                <option value="Monumen & Landmark">Monumen & Landmark</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="exampleInputCity1">Kategori</label>
+              <label for="exampleInputCity1">Wilayah</label>
               <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">

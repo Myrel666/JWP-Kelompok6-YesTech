@@ -9,5 +9,5 @@ class Kuliner extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'kategori', 'address', 'address_url', 'foto', 'description', 'area_id'];
+    protected $fillable = ['name', 'kategori', 'address', 'address_url', 'foto', 'description'];
 }

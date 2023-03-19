@@ -9,5 +9,5 @@ class Destination extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['name', 'address', 'address_url', 'foto', 'description', 'area_id'];
+    protected $fillable = ['name', 'kategori', 'address', 'address_url', 'foto', 'description'];
 }

@@ -33,15 +33,15 @@
               <input name='name' type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
-              <label for="exampleSelectGender">Wilayah</label>
+              <label for="exampleSelectGender">Kategori</label>
               <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
-                  <option>Kuliner</option>
-                  <option>Minuman</option>
+                <option value="Kuliner">Kuliner</option>
+                <option value="Minuman">Minuman</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="exampleInputCity1">Kategori</label>
+              <label for="exampleInputCity1">Wilayah</label>
               <input name='kategori' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">

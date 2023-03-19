@@ -36,7 +36,7 @@
                             <td>{{$row->name}}</td>
                             <td>{{$row->kategori}}</td>
                             <td>
-                              <img src="{{asset('fotodestinasi/'.$row->foto)}}" alt="" style="width:50px;">
+                              <img src="{{asset('fotokuliner/'.$row->foto)}}" alt="" style="width:50px;">
                             </td>
                             <td>{{$row->address}}</td>
                             <td>{{$row->description}}</td>
