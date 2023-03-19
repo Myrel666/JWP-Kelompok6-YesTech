@@ -267,6 +267,7 @@
         >
           <img
             class="img-fluid"
+            style="border-radius: 10px 100px"
             src="{{asset('fotokuliner/'.$row->foto)}}"
             alt="{{$row->name}}"
           />

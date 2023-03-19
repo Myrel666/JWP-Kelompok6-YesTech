@@ -17,27 +17,35 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Kuliner</h4>
-                    <a class="btn btn-success me-auto mb-3" href="{{ route('admin.kuliner.form') }}">+ Add Kuliner</a>
+                    <a class="btn btn-success me-auto mb-3" href="{{ route('contributor.kuliner.form') }}">+ Add Kuliner</a>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>No.</th>
-                            <th>Name</th>
-                            <th>Created</th>
-                            <th>Action</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">Deskripsi</th>
+                            <th scope="col">Aksi</th>
                           </tr>
                         </thead>
                         <tbody>
+                          @foreach ($kuliner as $row)
                           <tr>
-                            <td>Jacob</td>
-                            <td>53275531</td>
-                            <td>12 May 2017</td>
+                            <td>{{$row->name}}</td>
+                            <td>{{$row->kategori}}</td>
                             <td>
-                                <button type="button" class="btn btn-primary">Edit</button>
-                                <button type="button" class="btn btn-secondary">Detail</button>
+                              <img src="{{asset('fotokuliner/'.$row->foto)}}" alt="" style="width:50px;">
+                            </td>
+                            <td>{{$row->address}}</td>
+                            <td>{{$row->description}}</td>
+                            <td>
+                            <a href="/editkuliner/{{$row->id}}" class="btn btn-warning mb-2">Edit</a>
+                            <a href="/deletedestinasi/{{$row->id}}" class="btn btn-danger mb-2">Delete</a>
                             </td>
                           </tr>
+                          @endforeach
                         </tbody>
                       </table>
                     </div>

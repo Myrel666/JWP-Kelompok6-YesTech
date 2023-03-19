@@ -37,12 +37,21 @@ Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 // Administrator
 Route::get('Beranda', [AdminController::class, 'index'])->middleware('auth')->name('admin.beranda');
-// Administrator-Destinasi
-Route::get('admin/destinasi', [AdminController::class, 'destinasi'])->name('admin.destinasi');
+/// Administrator-Destinasi
+Route::get('admin/datadestinasi', [AdminController::class, 'datadestinasi'])->name('admin.datadestinasi');
 Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->name('admin.destinasi.form');
-// Administrator-Kuliner
-Route::get('admin/kuliner', [AdminController::class, 'kuliner'])->name('admin.kuliner');
+//CRUD Destinasi
+Route::post('/insertdestinasi',[AdminController::class, 'insertdestinasi'])->name('insertdestinasi');
+Route::post('/updatedestinasi/{id}',[AdminController::class, 'updatedestinasi'])->name('updatedestinasi');
+Route::get('/editdestinasi/{id}',[AdminController::class, 'editdestinasi'])->name('editdestinasi');
+
+// Administrasi-Kuliner
+Route::get('admin/datakuliner', [AdminController::class, 'datakuliner'])->name('admin.datakuliner');
 Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
+//CRUD Kuliner
+Route::post('/insertdestinasi',[AdminController::class, 'insertdestinasi'])->name('insertdestinasi');
+Route::post('/updatedestinasi/{id}',[AdminController::class, 'updatedestinasi'])->name('updatedestinasi');
+Route::get('/editdestinasi/{id}',[AdminController::class, 'editdestinasi'])->name('editdestinasi');
 
 
 // Kontributor

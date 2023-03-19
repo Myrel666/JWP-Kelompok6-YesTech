@@ -12,29 +12,29 @@
 <div class="main-panel">
     <div class="content-wrapper">
       <div class="page-header">
-        <h3 class="page-title"> Add Destination </h3>
+        <h3 class="page-title"> Edit Destination </h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Forms</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add Destination</li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Destination</li>
           </ol>
         </nav>
       </div>
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-          <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
+          <form action="/updatedestinasi/{{$destinasi->id}}" method="POST" enctype="multipart/form-data">
             @csrf
-          <h4 class="card-title">Destination Form Input</h4>
+          <h4 class="card-title">Destination Form Edit</h4>
           <p class="card-description"> Input Below Here </p>
           <form class="forms-sample">
             <div class="form-group">
-              <label for="exampleInputName1">Name</label>
+              <label for="exampleInputName1">Nama</label>
               <input name='name' type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="exampleSelectGender">Kategori</label>
-              <select name='kategori' class="form-control" id="exampleSelectGender">
+              <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
                 <option value="History & Heritage">History & Heritage</option>
                 <option value="museum">museum</option>
@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputCity1">Wilayah</label>
-              <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+              <input name='kategori' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">
               <label>File upload</label>

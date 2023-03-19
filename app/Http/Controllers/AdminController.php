@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Category;
 use App\Models\Destination;
 use App\Models\Kuliner;
 use App\Http\Controllers\Controller;
@@ -22,9 +23,10 @@ class AdminController extends Controller
     }
 
     // show navigasi destinasi
-    public function destinasi()
+    public function datadestinasi()
     {
-        return view('admin.destinasi');
+        $destinasi = Destination::all();
+        return view('admin.datadestinasi', compact('destinasi'));
     }
 
     // show tambah destinasi
@@ -32,16 +34,86 @@ class AdminController extends Controller
     {
         return view('admin.destinasiform');
     }
+    public function insertdestinasi(Request $request){
+        // dd($request);
+    $destinasi = Destination::create($request->all());
+    if($request->hasFile('foto')){
+        $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
+        $destinasi->foto = $request->file('foto')->getClientOriginalName();
+        $destinasi->save();
+        }
+        return redirect()->route('admin.datadestinasi');
+    }
+    
+    public function editdestinasi($id){
+        $destinasi = Destination::find($id);
+        // dd($data);
+        return view('admin.editdestinasi',compact('destinasi'));
+    }
+    public function updatedestinasi(Request $request, $id){ 
+        // dd($request->file('foto')->getClientOriginalName());
+        $destinasi = Destination::find($id);
+        if ($request->hasFile('foto')){
+            $request->file('foto')->move('fotodestinasi/',$request->file('foto')->getClientOriginalName());
+            $destinasi->foto = $request->file('foto')->getClientOriginalName();
+        }
+        $destinasi->name = $request->name;
+        $destinasi->address = $request->address;
+        $destinasi->kategori = $request->kategori;
+        $destinasi->description = $request->description;
 
+        $destinasi->save();
+        return redirect()->route('admin.datadestinasi');
+     }
+     public function deletedestinasi($id){
+        $destinasi = Destination::find($id);
+        $destinasi->delete();
+        return redirect()->route('admin.datadestinasi');
+        
+     }
+
+     
     // show navigasi kuliner
-    public function kuliner()
+    public function datakuliner()
     {
-        return view('admin.kuliner');
+        $kuliner = Kuliner::all();
+        return view('admin.datakuliner',compact('kuliner'));
     }
 
     // show navigasi kuliner
-    public function kulinerForm()
+    public function kulinerform()
     {
         return view('admin.kulinerform');
     }
+    public function insertkuliner(Request $request){
+        // dd($request);
+    $kuliner = Kuliner::create($request->all());
+    if($request->hasFile('foto')){
+        $request->file('foto')->move('fotokuliner/',$request->file('foto')->getClientOriginalName());
+        $kuliner->foto = $request->file('foto')->getClientOriginalName();
+        $kuliner->save();
+        }
+        return redirect()->route('admin.datakuliner');
+    }
+
+    public function editkuliner($id){
+        $kuliner = Kuliner::find($id);
+        // dd($data);
+        return view('admin.editkuliner',compact('kuliner'));
+    }
+    public function updatekuliner(Request $request, $id){ 
+        // dd($request->file('foto')->getClientOriginalName());
+        $kuliner = Kuliner::find($id);
+        if ($request->hasFile('foto')){
+            $request->file('foto')->move('fotokuliner/',$request->file('foto')->getClientOriginalName());
+            $kuliner->foto = $request->file('foto')->getClientOriginalName();
+        }
+        $kuliner->name = $request->name;
+        $kuliner->address = $request->address;
+        $kuliner->kategori = $request->kategori;
+        $kuliner->description = $request->description;
+
+        $kuliner->save();
+        return redirect()->route('admin.datakuliner');
+     }
 }

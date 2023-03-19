@@ -20,7 +20,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{ asset('THEMEWAGON') }}/template/assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('THEMEWAGON') }}/template/assets/images/tourism.png" />
+    <link rel="shortcut icon" href="{{asset('css/assets/tourism.png')}}" />
     @stack('css')
   </head>
   <body>
@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('admin.destinasi') }}">
+            <a class="nav-link" href="{{ route('admin.datadestinasi') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-map"></i>
               </span>
@@ -100,7 +100,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('admin.kuliner') }}">
+            <a class="nav-link" href="{{ route('admin.datakuliner') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-pizza"></i>
               </span>

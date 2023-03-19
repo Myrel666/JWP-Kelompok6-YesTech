@@ -12,46 +12,37 @@
 <div class="main-panel">
     <div class="content-wrapper">
       <div class="page-header">
-        <h3 class="page-title"> Add Destination </h3>
+        <h3 class="page-title"> Edit Kuliner </h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Forms</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add Destination</li>
+            <li class="breadcrumb-item active" aria-current="page">Edit Kuliner</li>
           </ol>
         </nav>
       </div>
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-          <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
+          <form action="/updatekuliner/{{$kuliner->id}}" method="POST" enctype="multipart/form-data">
             @csrf
-          <h4 class="card-title">Destination Form Input</h4>
+          <h4 class="card-title">Kuliner Form Edit</h4>
           <p class="card-description"> Input Below Here </p>
           <form class="forms-sample">
             <div class="form-group">
-              <label for="exampleInputName1">Name</label>
+              <label for="exampleInputName1">Nama</label>
               <input name='name' type="text" class="form-control" id="name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="exampleSelectGender">Kategori</label>
-              <select name='kategori' class="form-control" id="exampleSelectGender">
+              <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
-                <option value="History & Heritage">History & Heritage</option>
-                <option value="museum">museum</option>
-                <option value="religi">religi</option>
-                <option value="Outdoor & Nature">Outdoor & Nature</option>
-                <option value="Pusat Perbelanjaan">Pusat Perbelanjaan</option>
-                <option value="Pasar Tradisional">Pasar Tradisional</option>
-                <option value="Kampung Wisata">Kampung Wisata</option>
-                <option value="Sport">Sport</option>
-                <option value="Cagar Budaya">Cagar Budaya</option>
-                <option value="City Park">City Park</option>
-                <option value="Monumen & Landmark">Monumen & Landmark</option>
+                <option value="Kuliner">Kuliner</option>
+                <option value="Minuman">Minuman</option>
               </select>
             </div>
             <div class="form-group">
               <label for="exampleInputCity1">Wilayah</label>
-              <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+              <input name='kategori' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">
               <label>File upload</label>
@@ -68,7 +59,7 @@
               <textarea name='description' class="form-control" id="exampleTextarea1" rows="4"></textarea>
             </div>
             <div class="row justify-content-end">
-              <a href="{{ route('contributor.datadestinasi') }}" class="btn btn-secondary mr-2">Cancel</a>
+              <a href="{{ route('contributor.datakuliner') }}" class="btn btn-secondary mr-2">Cancel</a>
               <button type="submit" class="btn btn-primary mr-2">Submit</button>
             </div>
           </form>
