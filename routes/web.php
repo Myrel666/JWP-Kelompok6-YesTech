@@ -52,6 +52,7 @@ Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name(
 Route::post('/insertdestinasi',[AdminController::class, 'insertdestinasi'])->name('insertdestinasi');
 Route::post('/updatedestinasi/{id}',[AdminController::class, 'updatedestinasi'])->name('updatedestinasi');
 Route::get('/editdestinasi/{id}',[AdminController::class, 'editdestinasi'])->name('editdestinasi');
+Route::get('/deletekuliner/{id}',[AdminController::class, 'deletekuliner'])->name('deletekuliner');
 
 
 // Kontributor
@@ -71,6 +72,7 @@ Route::get('contributor/kuliner/form', [ContributorController::class, 'kulinerFo
 Route::post('/insertkuliner',[ContributorController::class, 'insertkuliner'])->name('insertkuliner');
 Route::post('/updatekuliner/{id}',[ContributorController::class, 'updatekuliner'])->name('updatekuliner');
 Route::get('/editkuliner/{id}',[ContributorController::class, 'editkuliner'])->name('editkuliner');
+Route::get('/deletekuliner/{id}',[ContributorController::class, 'deletekuliner'])->name('deletekuliner');
 
 
 

@@ -273,12 +273,12 @@
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">{{$row->address}}</span>
+          <span class="span-kategori">{{$row->kategori}}</span>
           <hr class="my-2" />
           <h5 class="font-weight-bold">{{$row->name}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            {{$row->kategori}}
+            {{$row->address}}
           </h6>
         </div>
       </div>

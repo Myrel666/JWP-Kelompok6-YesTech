@@ -41,7 +41,7 @@
                             <td>{{$row->address}}</td>
                             <td>{{$row->description}}</td>
                             <td>
-                            <a href="/editkuliner/{{$row->id}}" class="btn btn-warning mb-2">Edit</a>
+                            <a href="/editkuliner/{{$row->id}}" class="btn btn-primary mb-2">Edit</a>
                             </td>
                           </tr>
                           @endforeach

@@ -37,8 +37,8 @@
               <select name='kategori' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
                 <option value="History & Heritage">History & Heritage</option>
-                <option value="museum">museum</option>
-                <option value="religi">religi</option>
+                <option value="Museum">Museum</option>
+                <option value="Religi">Religi</option>
                 <option value="Outdoor & Nature">Outdoor & Nature</option>
                 <option value="Pusat Perbelanjaan">Pusat Perbelanjaan</option>
                 <option value="Pasar Tradisional">Pasar Tradisional</option>
