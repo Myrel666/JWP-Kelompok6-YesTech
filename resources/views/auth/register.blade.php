@@ -41,7 +41,7 @@
                       <input type="password" class="form-control p_input" name="password">
                     </div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary btn-block enter-btn" href="{{ route ('login') }}">Sign Up</button>
+                      <a class="btn btn-primary btn-lg" href="{{ route ('login') }}">Sign Up</a>
                     </div>
                     <p class="sign-up text-center">Already have an Account?<a href="{{ route ('login') }}"> Login</a></p>
                     <p class="terms">By creating an account you are accepting our<a href="#"> Terms & Conditions</a></p>
