@@ -16,7 +16,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{ asset('THEMEWAGON') }}/template/assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('THEMEWAGON') }}/template/assets/images/tourism.png" />
+    <link rel="shortcut icon" href="{{asset('css/assets/tourism.png')}}" />
   </head>
   <body>
     <div class="container-scroller">
@@ -41,7 +41,7 @@
                       <input type="password" class="form-control p_input" name="password">
                     </div>
                     <div class="text-center">
-                      <a class="btn btn-primary btn-lg" href="{{ route ('login') }}">Sign Up</a>
+                      <button type="submit" class="btn btn-primary btn-block enter-btn">Sign Up</button>
                     </div>
                     <p class="sign-up text-center">Already have an Account?<a href="{{ route ('login') }}"> Login</a></p>
                     <p class="terms">By creating an account you are accepting our<a href="#"> Terms & Conditions</a></p>
