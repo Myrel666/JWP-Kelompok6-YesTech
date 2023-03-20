@@ -20,6 +20,7 @@ class CreateKulinersTable extends Migration
             $table->text('description');
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
+            $table->string('foto', 255);
             $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
