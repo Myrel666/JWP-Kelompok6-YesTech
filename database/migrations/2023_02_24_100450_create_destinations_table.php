@@ -36,7 +36,7 @@ class CreateDestinationsTable extends Migration
             // $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
-            $table->foreign('area_id')->references('id')->on('areas');
+            // $table->foreign('area_id')->references('id')->on('areas');
         });
     }
 
