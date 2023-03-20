@@ -33,7 +33,7 @@ class CreateDestinationsTable extends Migration
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->string('foto', 255);
-            $table->unsignedBigInteger('area_id');
+            // $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
             $table->foreign('area_id')->references('id')->on('areas');
