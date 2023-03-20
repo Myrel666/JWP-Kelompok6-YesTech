@@ -29,6 +29,7 @@ class CreateDestinationsTable extends Migration
                 'City Park',
                 'Monumen & Landmark'
             ]);
+            $table->text('description');
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->unsignedBigInteger('area_id');

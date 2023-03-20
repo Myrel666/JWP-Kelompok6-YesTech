@@ -17,6 +17,7 @@ class CreateKulinersTable extends Migration
             $table->id();
             $table->string('name');
             $table->enum('kategori',['Kuliner','Minuman']);
+            $table->text('description');
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->unsignedBigInteger('area_id');
