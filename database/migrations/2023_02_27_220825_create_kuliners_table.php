@@ -19,10 +19,10 @@ class CreateKulinersTable extends Migration
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->string('foto', 255);
-            $table->enum('kategori',['Kuliner','Minuman']);
+            $table->text('description');
             // $table->unsignedBigInteger('area_id');
             $table->timestamps();
-            $table->text('description');
+            $table->enum('kategori',['Kuliner','Minuman']);
 
             // $table->foreign('area_id')->references('id')->on('areas');
         });
