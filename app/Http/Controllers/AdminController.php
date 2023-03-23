@@ -47,7 +47,7 @@ class AdminController extends Controller
     
     public function editdestinasi($id){
         $destinasi = Destination::find($id);
-        // dd($data);
+        // dd($destinasi);
         return view('admin.editdestinasi',compact('destinasi'));
     }
     public function updatedestinasi(Request $request, $id){ 
@@ -67,9 +67,9 @@ class AdminController extends Controller
      }
      public function deletedestinasi($id){
         $destinasi = Destination::find($id);
+        // dd($destinasi);
         $destinasi->delete();
         return redirect()->route('admin.datadestinasi');
-        
      }
 
      

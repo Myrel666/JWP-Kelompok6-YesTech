@@ -45,6 +45,7 @@
             <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
             <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
             <li><a href="{{ route('auth') }}">Login</a></li>
+            <li><a href="{{ route('auth') }}">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -434,5 +435,4 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-  </body>
 </html>
