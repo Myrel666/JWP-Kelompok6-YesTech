@@ -16,19 +16,7 @@ class CreateDestinationsTable extends Migration
         Schema::create('destinations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('kategori',[
-                'History & Heritage',
-                'Museum',
-                'Religi',
-                'Outdoor & Nature',
-                'Pusat Perbelanjaan',
-                'Pasar Tradisional',
-                'Kampung Wisata',
-                'Sport',
-                'Cagar Budaya',
-                'City Park',
-                'Monumen & Landmark'
-            ]);
+            $table->$table->string('kategori', 255);
             $table->text('description');
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
