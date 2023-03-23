@@ -22,10 +22,10 @@ class CreateKulinersTable extends Migration
             $table->string('address_url', 255)->nullable();
             $table->string('foto', 255);
             $table->text('description');
-            $table->unsignedBigInteger('area_id');
+            // $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
-            $table->foreign('area_id')->references('id')->on('areas');
+            // $table->foreign('area_id')->references('id')->on('areas');
         });
     }
 
