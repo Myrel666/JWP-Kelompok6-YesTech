@@ -16,15 +16,16 @@ class CreateKulinersTable extends Migration
         Schema::create('kuliners', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->enum('kategori',[
+                'Makanan','Minuman', 'Snack']);
             $table->string('address', 255)->nullable();
             $table->string('address_url', 255)->nullable();
             $table->string('foto', 255);
             $table->text('description');
-            // $table->unsignedBigInteger('area_id');
+            $table->unsignedBigInteger('area_id');
             $table->timestamps();
-            $table->enum('kategori',['Kuliner','Minuman']);
 
-            // $table->foreign('area_id')->references('id')->on('areas');
+            $table->foreign('area_id')->references('id')->on('areas');
         });
     }
 
