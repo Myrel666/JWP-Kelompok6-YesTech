@@ -17,7 +17,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Kuliner</h4>
-                    <a class="btn btn-success me-auto mb-3" href="{{ route('contributor.kuliner.form') }}">+ Add Kuliner</a>
+                    <a class="btn btn-success me-auto mb-3" href="{{ route('admin.kuliner.form') }}">+ Add Kuliner</a>
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
@@ -42,7 +42,7 @@
                             <td>{{$row->description}}</td>
                             <td>
                             <a href="/editkuliner/{{$row->id}}" class="btn btn-primary mb-2">Edit</a>
-                            <a href="/deletedestinasi/{{$row->id}}" class="btn btn-danger mb-2">Delete</a>
+                            <a href="/deletekuliner/{{$row->id}}" class="btn btn-danger mb-2">Delete</a>
                             </td>
                           </tr>
                           @endforeach

@@ -60,7 +60,7 @@
               <textarea name='description' class="form-control" id="exampleTextarea1" rows="4"></textarea>
             </div>
             <div class="row justify-content-end">
-              <a href="{{ route('contributor.datakuliner') }}" class="btn btn-secondary mr-2">Cancel</a>
+              <a href="{{ route('admin.datakuliner') }}" class="btn btn-secondary mr-2">Cancel</a>
               <button type="submit" class="btn btn-primary mr-2">Submit</button>
             </div>
           </form>

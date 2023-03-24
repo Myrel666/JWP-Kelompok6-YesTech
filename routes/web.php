@@ -44,14 +44,16 @@ Route::get('admin/destinasi/form', [AdminController::class, 'destinasiForm'])->n
 Route::post('/insertdestinasi',[AdminController::class, 'insertdestinasi'])->name('insertdestinasi');
 Route::post('/updatedestinasi/{id}',[AdminController::class, 'updatedestinasi'])->name('updatedestinasi');
 Route::get('/editdestinasi/{id}',[AdminController::class, 'editdestinasi'])->name('editdestinasi');
+Route::get('/deletedestinasi/{id}',[AdminController::class, 'deletedestinasi'])->name('deletedestinasi');
+
 
 // Administrasi-Kuliner
 Route::get('admin/datakuliner', [AdminController::class, 'datakuliner'])->name('admin.datakuliner');
 Route::get('admin/kuliner/form', [AdminController::class, 'kulinerForm'])->name('admin.kuliner.form');
 //CRUD Kuliner
-Route::post('/insertdestinasi',[AdminController::class, 'insertdestinasi'])->name('insertdestinasi');
-Route::post('/updatedestinasi/{id}',[AdminController::class, 'updatedestinasi'])->name('updatedestinasi');
-Route::get('/editdestinasi/{id}',[AdminController::class, 'editdestinasi'])->name('editdestinasi');
+Route::post('/insertkuliner',[AdminController::class, 'insertkuliner'])->name('insertkuliner');
+Route::post('/updatekuliner/{id}',[AdminController::class, 'updatekuliner'])->name('updatekuliner');
+Route::get('/editkuliner/{id}',[AdminController::class, 'editkuliner'])->name('editkuliner');
 Route::get('/deletekuliner/{id}',[AdminController::class, 'deletekuliner'])->name('deletekuliner');
 
 
@@ -72,8 +74,6 @@ Route::get('contributor/kuliner/form', [ContributorController::class, 'kulinerFo
 Route::post('/insertkuliner',[ContributorController::class, 'insertkuliner'])->name('insertkuliner');
 Route::post('/updatekuliner/{id}',[ContributorController::class, 'updatekuliner'])->name('updatekuliner');
 Route::get('/editkuliner/{id}',[ContributorController::class, 'editkuliner'])->name('editkuliner');
-Route::get('/deletekuliner/{id}',[ContributorController::class, 'deletekuliner'])->name('deletekuliner');
-
 
 
 

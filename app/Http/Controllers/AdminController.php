@@ -63,7 +63,7 @@ class AdminController extends Controller
         $destinasi->description = $request->description;
 
         $destinasi->save();
-        return redirect()->route('admin.datadestinasi');
+        return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Update');
      }
      public function deletedestinasi($id){
         $destinasi = Destination::find($id);
@@ -98,7 +98,7 @@ class AdminController extends Controller
 
     public function editkuliner($id){
         $kuliner = Kuliner::find($id);
-        // dd($data);
+        // dd($kuliner);
         return view('admin.editkuliner',compact('kuliner'));
     }
     public function updatekuliner(Request $request, $id){ 
@@ -114,6 +114,12 @@ class AdminController extends Controller
         $kuliner->description = $request->description;
 
         $kuliner->save();
+        return redirect()->route('admin.datakuliner');
+     }
+     public function deletekuliner($id){
+        $kuliner = Kuliner::find($id);
+        // dd($kuliner);
+        $kuliner->delete();
         return redirect()->route('admin.datakuliner');
      }
 }
