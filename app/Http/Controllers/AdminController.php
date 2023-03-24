@@ -42,7 +42,7 @@ class AdminController extends Controller
         $destinasi->foto = $request->file('foto')->getClientOriginalName();
         $destinasi->save();
         }
-        return redirect()->route('admin.datadestinasi');
+        return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Tambahkan');
     }
     
     public function editdestinasi($id){
@@ -63,13 +63,13 @@ class AdminController extends Controller
         $destinasi->description = $request->description;
 
         $destinasi->save();
-        return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Update');
+        return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Edit');
      }
      public function deletedestinasi($id){
         $destinasi = Destination::find($id);
         // dd($destinasi);
         $destinasi->delete();
-        return redirect()->route('admin.datadestinasi');
+        return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Hapus');
      }
 
      
@@ -93,7 +93,7 @@ class AdminController extends Controller
         $kuliner->foto = $request->file('foto')->getClientOriginalName();
         $kuliner->save();
         }
-        return redirect()->route('admin.datakuliner');
+        return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Tambahkan');
     }
 
     public function editkuliner($id){
@@ -114,12 +114,12 @@ class AdminController extends Controller
         $kuliner->description = $request->description;
 
         $kuliner->save();
-        return redirect()->route('admin.datakuliner');
+        return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Edit');
      }
      public function deletekuliner($id){
         $kuliner = Kuliner::find($id);
         // dd($kuliner);
         $kuliner->delete();
-        return redirect()->route('admin.datakuliner');
+        return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Tambahkan');
      }
 }

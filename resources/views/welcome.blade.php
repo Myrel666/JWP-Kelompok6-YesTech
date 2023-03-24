@@ -64,16 +64,16 @@
           >
           <div class="icon">
             <a class="a1" href="{{ route('destinasi') }}"
-              ><i class="fa-solid fa-map-location-dot"></i><br />
+              ><i class="fa-solid fa-archway"></i><br />
               Destinasi <br />
               Wisata</a
             >
-            <a class="a1" href=""
-              ><i class="fa fa-fw fa-dungeon"></i> <br />
-              Cagar <br />
-              Budaya</a
-            >
-            <a class="a1" href=""
+            <a class="a1" href="{{ route('kuliner') }}"
+              ><i class="fa fa-fw fa-utensils"></i> <br />
+              Kuliner <br />
+              Surabaya</a
+              >
+            {{-- <a class="a1" href=""
               ><i class="fa fa-fw fa-bullhorn"></i> <br />
               Event <br />
               Surabaya</a
@@ -82,7 +82,7 @@
               ><i class="fa fa-fw fa-map"></i> <br />
               Peta <br />
               Digital</a
-            >
+            > --}}
           </div>
         </div>
       </header>
@@ -99,7 +99,7 @@
             <br />
             <h6>Peta</h6></a
           >
-          <a href=""
+          <a href="{{ route('kuliner') }}"
             ><img src="{{ asset ('css/assets')}}/icon-culinary.png" alt="" />
             <br />
             <h6>Kuliner</h6></a

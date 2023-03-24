@@ -41,7 +41,7 @@ class ContributorController extends Controller
         $destinasi->foto = $request->file('foto')->getClientOriginalName();
         $destinasi->save();
         }
-        return redirect()->route('contributor.datadestinasi');
+        return redirect()->route('contributor.datadestinasi')->with('success', 'Data Berhasil Di Tambahkan');
     }
     
     public function editdestinasi($id){
@@ -62,7 +62,7 @@ class ContributorController extends Controller
         $destinasi->description = $request->description;
 
         $destinasi->save();
-        return redirect()->route('contributor.datadestinasi');
+        return redirect()->route('contributor.datadestinasi')->with('success', 'Data Berhasil Di Edit');
      }
 
      
@@ -86,7 +86,7 @@ class ContributorController extends Controller
         $kuliner->foto = $request->file('foto')->getClientOriginalName();
         $kuliner->save();
         }
-        return redirect()->route('contributor.datakuliner');
+        return redirect()->route('contributor.datakuliner')->with('success', 'Data Berhasil Di Tambahkan');
     }
 
     public function editkuliner($id){
@@ -107,6 +107,6 @@ class ContributorController extends Controller
         $kuliner->description = $request->description;
 
         $kuliner->save();
-        return redirect()->route('contributor.datakuliner');
+        return redirect()->route('contributor.datakuliner')->with('success', 'Data Berhasil Di Edit');
      }
 }
