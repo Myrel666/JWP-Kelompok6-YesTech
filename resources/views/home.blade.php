@@ -74,16 +74,6 @@
               Kuliner <br />
               Surabaya</a
               >
-            {{-- <a class="a1" href=""
-              ><i class="fa fa-fw fa-bullhorn"></i> <br />
-              Event <br />
-              Surabaya</a
-            >
-            <a class="a1" href=""
-              ><i class="fa fa-fw fa-map"></i> <br />
-              Peta <br />
-              Digital</a
-            > --}}
           </div>
         </div>
       </header>
