@@ -19,6 +19,11 @@
                     <h4 class="card-title">Destinasi</h4>
                     <a class="btn btn-success me-auto mb-3" href="{{ route('contributor.destinasi.form') }}">+ Add Destinasi</a>
                     <div class="table-responsive">
+                      @if ($message = Session::get('success'))
+                        <div class="alert alert-success" role="alert">
+                          {{ $message }}
+                        </div>
+                      @endif
                       <table class="table">
                         <thead>
                           <tr>

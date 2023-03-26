@@ -120,6 +120,6 @@ class AdminController extends Controller
         $kuliner = Kuliner::find($id);
         // dd($kuliner);
         $kuliner->delete();
-        return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Tambahkan');
+        return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Hapus');
      }
 }

@@ -36,7 +36,7 @@
               <label for="exampleSelectGender">Kategori</label>
               <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
-                <option value="Makanan">Makanan</option>
+                <option value="Kuliner">Kuliner</option>
                 <option value="Minuman">Minuman</option>
                 <option value="Snack">Snack</option>
               </select>
