@@ -37,10 +37,6 @@ header .intro h3 {
     padding: 0;
 }
 
-#aboutus {
-    text-align: center;
-}
-
 nav {
     z-index: 100;
     color: #fff;
@@ -222,7 +218,7 @@ nav .logo img.hitam {
 }
 
 .icon a:hover {
-    background-color: aqua;
+    background-color: skyblue;
 }
 
 /* Section bagian icon tengah */
@@ -452,7 +448,7 @@ footer .h5 .opsi {
     color: white;
 }
 
-@media screen and (max-width: 991.98px) {
+/* @media screen and (max-width: 991.98px) {
     .layout {
         width: 90%;
     }
@@ -493,4 +489,4 @@ footer .h5 .opsi {
         width: 100%;
         padding-bottom: 30px;
     }
-}
+} */

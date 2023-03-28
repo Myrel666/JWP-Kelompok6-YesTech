@@ -45,7 +45,7 @@
             <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
             <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
             <li><a href="{{ route('auth') }}">Login</a></li>
-            <li><a href="{{ route('auth') }}">Logout</a></li>
+            {{-- <li><a href="{{ route('auth') }}">Logout</a></li> --}}
           </ul>
         </div>
       </div>
@@ -54,15 +54,15 @@
       <header id="home">
         <div class="overlay"></div>
         <video autoplay muted loop>
-          <source src="{{ asset ('css/assets')}}/myVideo.mp4" type="video/mp4" />
+          <source src="{{ asset ('css/assets')}}/myVideo.mp4" type="video/mp4"/>
         </video>
         <div class="intro">
           <h2>WISATA SURABAYA</h2>
           <h3>You will love every corner of it</h3>
-          <span class="slidein"
-            >Let's explore on of the biggest city in Indonesia with famous name
-            called City of Heroes</span
-          >
+          <span class="slidein">
+            Let's explore on of the biggest city in Indonesia with famous name
+            called City of Heroes
+          </span>
           <div class="icon">
             <a class="a1" href="{{ route('destinasi') }}"
               ><i class="fa-solid fa-archway"></i><br />
@@ -320,9 +320,9 @@
         </path>
         <path class="elementor-shape-fill" fill="#4a4a8a" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
         <path class="elementor-shape-fill" fill="#4a4a8a" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-    </svg>
+      </svg>
       <!-- footer -->
-    <footer style="background-color: #4a4a8a; ">
+      <footer style="background-color: #4a4a8a; ">
         <div class="isi5" >
             <div class="isi5-content1">
                 <div class="row1">
@@ -416,7 +416,7 @@
                 <div class="row2"></div>
             </div>
         </div>
-    </footer>
+      </footer>
     </div>
     <!-- source -->
     <script src="javascript.js"></script>
