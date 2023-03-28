@@ -54,7 +54,7 @@
     </div>
     <div><br /></div>
     <p class="kuliner-filter">
-      <button
+      {{-- <button
         class="btn btn-primary collapsed"
         type="button"
         data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
         aria-controls="collapse1"
       >
         Filter Wilayah
-      </button>
+      </button> --}}
 
       <button
         class="btn btn-primary collapsed"
@@ -93,7 +93,7 @@
       </button>
     </p>
 
-    <div class="collapse" id="collapse1">
+    {{-- <div class="collapse" id="collapse1">
       <div class="card card-body">
         Filter Wilayah
         <ul class="list1">
@@ -127,7 +127,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> --}}
 
     <div class="collapse" id="collapse2">
       <div class="card card-body">
