@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kuliner Surabaya</title>
-    <link rel="shortcut icon" href="{{asset('css/assets')}}/favicon.png">
+    <title>Destinasi</title>
+    <link rel="shortcut icon" href="{{ asset ('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,32 +28,50 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="{{asset('css/tes.css')}}" />
+    <link rel="stylesheet" href="{{ asset ('css/tes.css')}}" />
   </head>
   <body>
     <header>
-      <nav class="navbar-kuliner">
+      <nav class="navbar-destinasi">
         <a href="" class="nav-logo"
           ><img
-            src="{{asset('css/assets')}}/logo-white.png"
+            src="{{ asset ('css/assets')}}/logo-white.png"
             alt=""
         /></a>
         <ul class="nav-link">
-          <li class="nav-item2"><a href="{{ route('home') }}">Home</a></li>
-          <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
-          <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
-          <li class="nav-item2"><a href="{{ route('auth') }}">Login</a></li>
+            <li class="nav-item2"><a href="{{ route('home') }}">Home</a></li>
+            <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
+            <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
+            <li class="nav-item2"><a href="{{ route('auth') }}">Login</a></li>
         </ul>
       </nav>
     </header>
-    <div class="kuliner-nav">
-      <p><a href="{{ route('home') }}">Beranda</a> > Kuliner Surabaya</p>
+    <div class="destinasi-nav">
+      <p><a href="{{ route('home') }}">Beranda</a> > Destinasi Wisata</p>
     </div>
-    <div class="kuliner-judul">
-      <h2>KULINER SURABAYA</h2>
+    <div class="destinasi-judul">
+      <h2>MUSEUM PENDIDIKAN SURABAYA</h2>
     </div>
-    <div><br /></div>
-    <p class="kuliner-filter">
+    <div class="card-body px-2 pt-6">
+        <div class="card">
+          <img src="{{ asset ('css/assets')}}/1.jpg" class="card-img-top" alt="">
+          <div class="col-md-12">
+            <h3 class="font-weight-bold">Museum Pendidikan Surabaya</h3>
+            <h5>Jl. Genteng Kali No. 10
+                Museum</h5>
+          </div>
+          <div class="mb-5 text-justify">
+            <p>Museum Pendidikan Surabaya merupakan museum tematik yang didirikan sebagai langkah pelestarian sejarah dan budaya bangsa dengan tujuan untuk mendukung kegiatan edukasi, riset dan rekreasi di Kota Surabaya. Diresmikan oleh Walikota Surabaya Tri Rismaharini pada 25 November 2019. yang menyimpan bukti materiil Pendidikan pada masa Pra-Aksara, Masa Klasik, Masa Kolonial dan Masa Kemerdekaan. Berlokasi di Jalan Genteng Kali No 10 Surabaya yang merupakan EX Sekolah Taman siswa. </p>
+            <p>ZONA MASA PRA-AKSARA Zona Pendidikan di era ini mungkin terlihat sangat sederhana dan mendasar, tapi juga mengajarkan salah satu esensi paling utama pengetahuan yang tetap relevan hingga era kini yaitu bertahan hidup. Didalam zona ini terdapat koleksi Manuskrip Kuno Era1800-an , Manuskrip berbahan dasar Lontar dan Diorama Pra Aksara (Manusia Purba) </p>
+            <p>ZONA KERAJAAN Pada zona ini Pengaruh dan corak dari luar nusantara yang berasimilasi dengan elemen lokal menjadikan pendidikan di era ini menjadi sangat dinamis dan menarik dibanding sebelumnya. Berbagai ajaran agama dan pengetahuan yang disebarkan inipun memiliki jenis aksara yang masing-masing. </p>
+            <p>ZONA KOLONIAL Pada Pendidikan masa ini menceritakan tentang Pendidikan era Kolonial Belanda dan Jepang. Koleksi terkait zona Kolonial ini meliputi Sepeda Guru. Sepeda Zundapp untuk pendampingan Orang tua mengantar siswa berangkat Sekolah dsb.</p>
+            <p>ZONA KEMERDEKAAN. Pada Zona Kemerdekaan ini menampilkan Koleksi –koleksi terkait benda bukti materiil peradaban periodisasi tahun 1945 – 1990an.</p>
+          </div>
+        </div>
+    </div>
+    
+    <!-- <div><br /></div>
+    <p class="destinasi-filter">
       <button
         class="btn btn-primary collapsed"
         type="button"
@@ -241,156 +259,153 @@
     <div class="row">
       <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/9UqhFvsAsKw8dViC9"
-        >
-          <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/rawon-kalkulator.jpg"
-            alt="Rawon Kalkulator"
-          />
-        </a>
-        <div class="mt-2">
-          <span class="span-kategori"> Kuliner </span>
-          <hr class="my-2" />
-          <h5 class="font-weight-bold">Rawon Kalkulator</h5>
-          <h6>
-            <i class="fa fa-fw fa-map-marker-alt"></i>
-            Sentra PKL Tamam Bungkul Jl. Raya Darmo
-          </h6>
-        </div>
-      </div>
-
-      @foreach ($kuliner as $row)
-      <div class="col-md-4 text-center my-2">
-        <a
-          href="/deskripsi/deskripsikuliner/{{$row->id}}"
+          href="asset/1.jpg"
         >
           <img
             class="img-fluid"
-            style="border-radius: 10px 100px"
-            src="{{asset('fotokuliner/'.$row->foto)}}"
-            alt="{{$row->name}}"
+            src="asset/1.jpg"
+            alt="Museum Pendidikan Surabaya"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">{{$row->address}}</span>
+          <span class="span-kategori"> Museum </span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">{{$row->name}}</h5>
+          <h5 class="font-weight-bold">Museum Pendidikan Surabaya</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            {{$row->kategori}}
+            Jl. Genteng Kali No. 10
           </h6>
         </div>
       </div>
-      @endforeach
 
-      {{-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/1aFS9ykFx3iBsabF8"
+          href="asset/2.jpg"
         >
           <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/G-WALK.jpg"
-            alt="G-WALK"
+            class="img-fluid"
+            src="asset/2.jpg"
+            alt="Museum Olahraga Surabaya"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori"> Kuliner </span>
+          <span class="span-kategori"> Museum </span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">G WALK Citraland</h5>
+          <h5 class="font-weight-bold">Museum Olahraga Surabaya</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Ruko Taman Gapura, Jl. Niaga Gapura No.14
+            Jl. Indragiri No.6, Gelora Pancasila
           </h6>
         </div>
-      </div> --}}
+      </div>
 
-      {{-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/9y86EMNGgCmFtc8E9"
+          href="asset/3.jpg"
         >
           <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/sate-kelopo.jpg"
-            alt="Sate Kelopo"
+            class="img-fluid"
+            src="asset/3.jpg"
+            alt="Museum Olahraga Surabaya"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori"> Kuliner </span>
+          <span class="span-kategori"> Religi </span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">Sate Kelopo Ondomohen</h5>
+          <h5 class="font-weight-bold">Masjid Nasional Al Akbar</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Walikota Mustajab No.36
+            Jl. Masjid Agung Timur No.1
           </h6>
         </div>
-      </div> --}}
+      </div>
 
-      {{-- <div class="col-md-4 text-center my-2">
-        <a href="https://goo.gl/maps/5EKT9nickJmDDbEj6">
-          <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/es-coklat.jpg"
-            alt="Es Coklat Tambah Umur"
-          />
-        </a>
-        <div class="mt-2">
-          <span class="span-kategori">Kuliner</span>
-          <hr class="my-2" />
-          <h5 class="font-weight-bold">Es Coklat Tambah Umur</h5>
-          <h6>
-            <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Simokerto No.49, Simokerto
-          </h6>
-        </div>
-      </div> --}}
-
-      {{-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/wsHTQ7beYUNcTfLv8"
+          href="asset/4.jpg"
         >
           <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/es-campur.jpg"
-            alt="Es Campur Tidar"
+            class="img-fluid"
+            src="asset/4.jpg"
+            alt="Museum Olahraga Surabaya"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">Kuliner</span>
+          <span class="span-kategori"> Kampung wisata </span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">Es Campur Tidar</h5>
+          <h5 class="font-weight-bold">Kampung Lawas Maspati</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Tidar, Sawahan
+            Jl. Maspati Gg. VI, Bubutan
           </h6>
         </div>
-      </div> --}}
+      </div>
 
-      {{-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
+        <a href="asset/5.jpg">
+          <img
+            class="img-fluid"
+            src="asset/5.jpg"
+            alt="Museum Olahraga Surabaya"
+          />
+        </a>
+        <div class="mt-2">
+          <span class="span-kategori">City</span>
+          <hr class="my-2" />
+          <h5 class="font-weight-bold">Taman Mozaik</h5>
+          <h6>
+            <i class="fa fa-fw fa-map-marker-alt"></i>
+            Jalan Wiyung Praja, Wiyung
+          </h6>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center my-2">
         <a
-          href="https://goo.gl/maps/TRSE3yvyYx44eA3g6"
+          href="asset/6.jpg"
         >
           <img
-            class="img-fluid-kuliner"
-            src="{{ asset ('css/assets')}}/bratang-binangun.jpg"
-            alt="Sentra Wisata Kuliner Bratang Binangun"
+            class="img-fluid"
+            src="asset/6.jpg"
+            alt="Museum Olahraga Surabaya"
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">Kuliner</span>
+          <span class="span-kategori">Family Activities</span>
           <hr class="my-2" />
-          <h5 class="font-weight-bold">Sentra Wisata Kuliner Bratang Binangun</h5>
+          <h5 class="font-weight-bold">Kebun Binatang Surabaya</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            Jl. Raya Manyar No.80A, Baratajaya
+            Jl. Setail No. 1, Darmo, Wonokromo
           </h6>
         </div>
-      </div> --}}
+      </div>
 
-      <!-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
+        <a
+          href="asset/7.jpg"
+        >
+          <img
+            class="img-fluid"
+            src="asset/7.jpg"
+            alt="Museum Olahraga Surabaya"
+          />
+        </a>
+        <div class="mt-2">
+          <span class="span-kategori">Monumen & landmark</span>
+          <hr class="my-2" />
+          <h5 class="font-weight-bold">Monumen Tugu Pahlawan</h5>
+          <h6>
+            <i class="fa fa-fw fa-map-marker-alt"></i>
+            Jl. Pahlawan
+          </h6>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center my-2">
         <a href="asset/8.jpg">
           <img
-            class="img-fluid-kuliner"
+            class="img-fluid"
             src="asset/8.jpg"
             alt="Museum Olahraga Surabaya"
           />
@@ -404,12 +419,12 @@
             JL. Jendral Basuki Rachmat no.8-12, Surabaya
           </h6>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="col-md-4 text-center my-2">
+      <div class="col-md-4 text-center my-2">
         <a href="asset/9.jpg">
           <img
-            class="img-fluid-kuliner"
+            class="img-fluid"
             src="asset/9.jpg"
             alt="Museum Olahraga Surabaya"
           />
@@ -423,10 +438,10 @@
             Jl. Genteng Besar
           </h6>
         </div>
-      </div> -->
+      </div>
     </div>
 
-    <!-- <div class="nav-list-page">
+    <div class="nav-list-page">
       <nav>
         <ul class="pagination">
           <li class="page-item">
@@ -475,9 +490,9 @@
           </li>
         </ul>
       </nav>
-    </div> -->
+    </div>
 
-    <div class="kosong"> <br> </div>
+    <div class="kosong"> <br> </div> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="transform:rotate(180deg);margin-bottom:-1px">
       <path class="elementor-shape-fill" fill="#4a4a8a" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">

@@ -64,6 +64,10 @@ class ContributorController extends Controller
         $destinasi->save();
         return redirect()->route('contributor.datadestinasi')->with('success', 'Data Berhasil Di Edit');
      }
+     public function deskripsidestinasi($id){
+        $destinasi = Destination::find($id);
+        return view('deskripsi.deskripsidestinasi',compact('destinasi'));
+     }
 
      
     // show navigasi kuliner
@@ -108,5 +112,9 @@ class ContributorController extends Controller
 
         $kuliner->save();
         return redirect()->route('contributor.datakuliner')->with('success', 'Data Berhasil Di Edit');
+     }
+     public function deskripsikuliner($id){
+        $kuliner = Kuliner::find($id);
+        return view('deskripsi.deskripsikuliner',compact('kuliner'));
      }
 }

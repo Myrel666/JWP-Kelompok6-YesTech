@@ -71,6 +71,10 @@ class AdminController extends Controller
         $destinasi->delete();
         return redirect()->route('admin.datadestinasi')->with('success', 'Data Berhasil Di Hapus');
      }
+     public function deskripsidestinasi($id){
+        $destinasi = Destination::find($id);
+        return view('deskripsi.deskripsidestinasi',compact('destinasi'));
+     }
 
      
     // show navigasi kuliner
@@ -121,5 +125,9 @@ class AdminController extends Controller
         // dd($kuliner);
         $kuliner->delete();
         return redirect()->route('admin.datakuliner')->with('success', 'Data Berhasil Di Hapus');
+     }
+     public function deskripsikuliner($id){
+        $kuliner = Kuliner::find($id);
+        return view('deskripsi.deskripsikuliner',compact('kuliner'));
      }
 }

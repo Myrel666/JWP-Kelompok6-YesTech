@@ -28,14 +28,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="{{ asset ('css/assets')}}/tes.css" />
+    <link rel="stylesheet" href="{{ asset ('css/tes.css')}}" />
   </head>
   <body>
     <header>
       <nav class="navbar-destinasi">
         <a href="" class="nav-logo"
           ><img
-            src="asset/logo-white.png"
+            src="{{ asset ('css/assets')}}/logo-white.png"
             alt=""
         /></a>
         <ul class="nav-link">
@@ -50,11 +50,25 @@
       <p><a href="{{ route('home') }}">Beranda</a> > Destinasi Wisata</p>
     </div>
     <div class="destinasi-judul">
-      <h2>MUSEUM PENDIDIKAN SURABAYA</h2>
+        <h3 class="fw-bolder text-center mb-4 ">{{$destinasi->name}}</h3>
     </div>
-    <div class="card-body px-2 pt-6">
+    {{-- <div><br/></div> --}}
+    <div>
+      <div class="row destinasi-isi" method="get" >
+      <div class="d-flex justify-content-center">
+        <img class="mb-4" src="{{asset('fotodestinasi/'.$destinasi->foto)}}" alt="" style="height:500px;width:1000px"> 
+      </div>
+      <div class="d-flex flex-row mb-2 justify-content-center">
+      <h6 class="fw-semibold p-2"><i class="fa fa-fw fa-map-marker-alt"></i> {{$destinasi->address}}</h6>
+      <h6 class="fw-semibold p-2"><i class="fa-sharp fa-solid fa-tags"></i> {{$destinasi->kategori}}</h6>
+      </div>
+      <p class="text-center">{{$destinasi->description}}</p>
+    </div>
+      <br>
+
+    {{-- <div class="card-body px-2 pt-6">
         <div class="card">
-          <img src="asset/1.jpg" class="card-img-top" alt="">
+          <img src="{{ asset ('css/assets')}}/1.jpg" class="card-img-top" alt="">
           <div class="col-md-12">
             <h3 class="font-weight-bold">Museum Pendidikan Surabaya</h3>
             <h5>Jl. Genteng Kali No. 10
@@ -68,7 +82,7 @@
             <p>ZONA KEMERDEKAAN. Pada Zona Kemerdekaan ini menampilkan Koleksi –koleksi terkait benda bukti materiil peradaban periodisasi tahun 1945 – 1990an.</p>
           </div>
         </div>
-    </div>
+    </div> --}}
     
     <!-- <div><br /></div>
     <p class="destinasi-filter">
@@ -499,8 +513,8 @@
       </path>
       <path class="elementor-shape-fill" fill="#4a4a8a" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
       <path class="elementor-shape-fill" fill="#4a4a8a" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-  </svg>
-  <footer style="background-color: #4a4a8a; ">
+    </svg>
+    <footer style="background-color: #4a4a8a; ">
       <div class="isi-footer" >
           <div class="isifoot-content1">
               <div class="row1">
@@ -595,6 +609,6 @@
               <div class="row2"></div>
           </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>

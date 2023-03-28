@@ -53,7 +53,7 @@
     <div class="destinasi-judul">
       <h2>DESTINASI WISATA</h2>
     </div>
-    <div><br /></div>
+    <div><br/></div>
     <p class="destinasi-filter">
       <button
         class="btn btn-primary collapsed"
@@ -242,7 +242,7 @@
     <div class="row">
       <div class="col-md-4 text-center my-2">
         <a
-          href="#"
+          href="{{ route('deskripsi.museumpendidikan') }}"
         >
           <img
             class="img-fluid"
@@ -264,7 +264,7 @@
       @foreach ($destinasi as $row)
       <div class="col-md-4 text-center my-2">
         <a
-          href="#"
+          href="/deskripsi/deskripsidestinasi/{{$row->id}}"
         >
           <img
             class="img-fluid"
@@ -273,12 +273,12 @@
           />
         </a>
         <div class="mt-2">
-          <span class="span-kategori">{{$row->kategori}}</span>
+          <span class="span-kategori">{{$row->address}}</span>
           <hr class="my-2" />
           <h5 class="font-weight-bold">{{$row->name}}</h5>
           <h6>
             <i class="fa fa-fw fa-map-marker-alt"></i>
-            {{$row->address}}
+            {{$row->kategori}}
           </h6>
         </div>
       </div>
@@ -485,8 +485,8 @@
       </path>
       <path class="elementor-shape-fill" fill="#4a4a8a" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
       <path class="elementor-shape-fill" fill="#4a4a8a" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
-  </svg>
-  <footer style="background-color: #4a4a8a; ">
+    </svg>
+    <footer style="background-color: #4a4a8a; ">
       <div class="isi-footer" >
           <div class="isifoot-content1">
               <div class="row1">
@@ -581,6 +581,6 @@
               <div class="row2"></div>
           </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
