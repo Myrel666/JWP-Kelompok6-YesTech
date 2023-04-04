@@ -283,7 +283,11 @@
         </div>
       </div>
       @endforeach
-
+      {{-- <div class="nav-list-page">
+        <nav>
+          {{$destinasi->links()}}
+        </nav>
+      </div> --}}
 
       {{-- <div class="col-md-4 text-center my-2">
         <a

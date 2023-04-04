@@ -27,6 +27,7 @@
                       <table class="table">
                         <thead>
                           <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Kategori</th>
                             <th scope="col">Foto</th>
@@ -36,14 +37,15 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach ($kuliner as $row)
+                          @foreach ($kuliner as $datakuliner => $row)
                           <tr>
+                            <th scope="row">{{$datakuliner + $kuliner->firstitem()}}</th>
                             <td>{{$row->name}}</td>
-                            <td>{{$row->kategori}}</td>
+                            <td>{{$row->address}}</td>
                             <td>
                               <img src="{{asset('fotokuliner/'.$row->foto)}}" alt="" style="width:50px;">
                             </td>
-                            <td>{{$row->address}}</td>
+                            <td>{{$row->kategori}}</td>
                             <td>{{$row->description}}</td>
                             <td>
                             <a href="/editkuliner/{{$row->id}}" class="btn btn-primary mb-2">Edit</a>
@@ -52,6 +54,7 @@
                           @endforeach
                         </tbody>
                       </table>
+                      {{$kuliner->links()}}
                     </div>
                   </div>
                 </div>

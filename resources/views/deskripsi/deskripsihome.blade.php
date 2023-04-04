@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Destinasi</title>
+    <title>Wisata Surabaya</title>
     <link rel="shortcut icon" href="{{ asset ('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -50,20 +50,20 @@
       <p><a href="{{ route('home') }}">Beranda</a> > Destinasi Wisata</p>
     </div>
     <div class="destinasi-judul">
-        <h3 class="fw-bolder text-center mb-4 ">{{$destinasi->name}}</h3>
+        <h3 class="fw-bolder text-center mb-4 ">{{$home->name}}</h3>
     </div>
     {{-- <div><br/></div> --}}
     <div>
       <div class="row destinasi-isi" method="get" >
       <div class="d-flex justify-content-center">
-        <img class="mb-4" src="{{asset('fotodestinasi/'.$destinasi->foto)}}" alt="" style="height:500px;width:1000px"> 
+        <img class="mb-4" src="{{asset('fotohome/'.$home->foto)}}" alt="" style="height:500px;width:1000px"> 
       </div>
       <div class="d-flex flex-row mb-2 justify-content-center">
-        <h6 class="fw-semibold p-2"><i class=""></i> {{$destinasi->name}}</h6>
-          <h6 class="fw-semibold p-2"><i class="fa fa-fw fa-map-marker-alt"></i> {{$destinasi->kategori}}</h6>
-          <h6 class="fw-semibold p-2"><i class="fa-sharp fa-solid fa-tags"></i> {{$destinasi->address}}</h6>
+        <h6 class="fw-semibold p-2"><i class=""></i> {{$home->name}}</h6>
+          <h6 class="fw-semibold p-2"><i class="fa fa-fw fa-map-marker-alt"></i> {{$home->kategori}}</h6>
+          <h6 class="fw-semibold p-2"><i class="fa-sharp fa-solid fa-tags"></i> {{$home->address}}</h6>
       </div>
-      <p class="text-center">{{$destinasi->description}}</p>
+      <p class="text-center">{{$home->description}}</p>
     </div>
       <br>
 

@@ -56,7 +56,15 @@ Route::post('/insertkuliner',[AdminController::class, 'insertkuliner'])->name('i
 Route::post('/updatekuliner/{id}',[AdminController::class, 'updatekuliner'])->name('updatekuliner');
 Route::get('/editkuliner/{id}',[AdminController::class, 'editkuliner'])->name('editkuliner');
 Route::get('/deletekuliner/{id}',[AdminController::class, 'deletekuliner'])->name('deletekuliner');
-
+// Administrasi-Home
+Route::get('admin/datahome', [AdminController::class, 'datahome'])->name('admin.datahome');
+Route::get('admin/home/form', [AdminController::class, 'homeForm'])->name('admin.home.form');
+Route::get('deskripsi/deskripsihome/{id}',[AdminController::class, 'deskripsihome'])->name('deskripsihome');
+//CRUD Home
+Route::post('/inserthome',[AdminController::class, 'inserthome'])->name('inserthome');
+Route::post('/updatehome/{id}',[AdminController::class, 'updatekuliner'])->name('updatekuliner');
+Route::get('/edithome/{id}',[AdminController::class, 'edithome'])->name('edithome');
+Route::get('/deletehome/{id}',[AdminController::class, 'deletehome'])->name('deletehome');
 
 // Kontributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
@@ -77,6 +85,14 @@ Route::get('deskripsi/deskripsikuliner/{id}',[ContributorController::class, 'des
 Route::post('/insertkuliner',[ContributorController::class, 'insertkuliner'])->name('insertkuliner');
 Route::post('/updatekuliner/{id}',[ContributorController::class, 'updatekuliner'])->name('updatekuliner');
 Route::get('/editkuliner/{id}',[ContributorController::class, 'editkuliner'])->name('editkuliner');
+// Kontributor-Home
+Route::get('contributor/datahome', [ContributorController::class, 'datahome'])->name('contributor.datahome');
+Route::get('contributor/home/form', [ContributorController::class, 'homeForm'])->name('contributor.home.form');
+Route::get('deskripsi/deskripsihome/{id}',[ContributorController::class, 'deskripsihome'])->name('deskripsihome');
+//CRUD Home
+Route::post('/inserthome',[ContributorController::class, 'inserthome'])->name('inserthome');
+Route::post('/updatehome/{id}',[ContributorController::class, 'updatekuliner'])->name('updatekuliner');
+Route::get('/edithome/{id}',[ContributorController::class, 'edithome'])->name('edithome');
 
 
 

@@ -27,6 +27,7 @@
                       <table class="table">
                         <thead>
                           <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Kategori</th>
                             <th scope="col">Foto</th>
@@ -36,8 +37,9 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach ($kuliner as $row)
+                          @foreach ($kuliner as $datakuliner => $row)
                           <tr>
+                            <th scope="row">{{$datakuliner + $kuliner->firstitem()}}</th>
                             <td>{{$row->name}}</td>
                             <td>{{$row->kategori}}</td>
                             <td>
@@ -53,6 +55,7 @@
                           @endforeach
                         </tbody>
                       </table>
+                      {{$kuliner->links()}}
                     </div>
                   </div>
                 </div>

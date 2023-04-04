@@ -92,6 +92,14 @@
             </a>
           </li>
           <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('contributor.datahome') }}">
+              <span class="menu-icon">
+                <i class="mdi mdi-home"></i>
+              </span>
+              <span class="menu-title">Set Home</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('contributor.datadestinasi') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-map"></i>

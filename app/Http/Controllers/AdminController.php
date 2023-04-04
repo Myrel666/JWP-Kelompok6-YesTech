@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Category;
 use App\Models\Destination;
 use App\Models\Kuliner;
+use App\Models\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -19,13 +20,14 @@ class AdminController extends Controller
         $user = User::all();
         $destinasi = Destination::all();
         $kuliner = Kuliner::all();
-        return view('admin.dashboard', compact('user', 'destinasi', 'kuliner'));
+        $home = Home::all();
+        return view('admin.dashboard', compact('user', 'destinasi', 'kuliner', 'home'));
     }
 
     // show navigasi destinasi
     public function datadestinasi()
     {
-        $destinasi = Destination::all();
+        $destinasi = Destination::paginate(5);
         return view('admin.datadestinasi', compact('destinasi'));
     }
 
@@ -77,14 +79,12 @@ class AdminController extends Controller
      }
 
      
-    // show navigasi kuliner
-    public function datakuliner()
+     // show navigasi kuliner
+     public function datakuliner()
     {
-        $kuliner = Kuliner::all();
-        return view('admin.datakuliner',compact('kuliner'));
+        $kuliner = Kuliner::paginate(5);
+        return view('admin.datakuliner', compact('kuliner'));
     }
-
-    // show navigasi kuliner
     public function kulinerform()
     {
         return view('admin.kulinerform');
@@ -129,5 +129,60 @@ class AdminController extends Controller
      public function deskripsikuliner($id){
         $kuliner = Kuliner::find($id);
         return view('deskripsi.deskripsikuliner',compact('kuliner'));
+     }
+
+     
+    // show navigasi home
+    public function datahome()
+    {
+        $home = Home::paginate(5);
+        return view('admin.datahome',compact('home'));
+    }
+
+    // show navigasi home
+    public function homeform()
+    {
+        return view('admin.homeform');
+    }
+    public function inserthome(Request $request){
+        // dd($request);
+    $home = Home::create($request->all());
+    if($request->hasFile('foto')){
+        $request->file('foto')->move('fotohome/',$request->file('foto')->getClientOriginalName());
+        $home->foto = $request->file('foto')->getClientOriginalName();
+        $home->save();
+        }
+        return redirect()->route('admin.datahome')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function edithome($id){
+        $home = Home::find($id);
+        // dd($home);
+        return view('admin.edithome',compact('home'));
+    }
+    public function updatehome(Request $request, $id){ 
+        // dd($request->file('foto')->getClientOriginalName());
+        $home = Home::find($id);
+        if ($request->hasFile('foto')){
+            $request->file('foto')->move('fotohome/',$request->file('foto')->getClientOriginalName());
+            $home->foto = $request->file('foto')->getClientOriginalName();
+        }
+        $home->name = $request->name;
+        $home->address = $request->address;
+        $home->kategori = $request->kategori;
+        $home->description = $request->description;
+
+        $home->save();
+        return redirect()->route('admin.datahome')->with('success', 'Data Berhasil Di Edit');
+     }
+     public function deletehome($id){
+        $home = Home::find($id);
+        // dd($home);
+        $home->delete();
+        return redirect()->route('admin.datahome')->with('success', 'Data Berhasil Di Hapus');
+     }
+     public function deskripsihome($id){
+        $home = Home::find($id);
+        return view('deskripsi.deskripsihome',compact('home'));
      }
 }

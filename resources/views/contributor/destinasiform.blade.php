@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
               <label for="exampleSelectGender">Kategori</label>
-              <select name='kategori' class="form-control" id="exampleSelectGender">
+              <select name='address' class="form-control" id="exampleSelectGender">
                 <option selected>Pilih Kategori</option>
                 <option value="History & Heritage">History & Heritage</option>
                 <option value="Museum">Museum</option>
@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputCity1">Wilayah</label>
-              <input name='address' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+              <input name='kategori' type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
             </div>
             <div class="form-group">
               <label>File upload</label>

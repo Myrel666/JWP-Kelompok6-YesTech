@@ -12,20 +12,20 @@
 <div class="main-panel">
     <div class="content-wrapper">
       <div class="page-header">
-        <h3 class="page-title"> Add Destination </h3>
+        <h3 class="page-title"> Add Home </h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Forms</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add Destination</li>
+            <li class="breadcrumb-item active" aria-current="page">Add Home</li>
           </ol>
         </nav>
       </div>
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
         <div class="card-body">
-          <form action="/insertdestinasi" method="POST" enctype="multipart/form-data">
+          <form action="/inserthome" method="POST" enctype="multipart/form-data">
             @csrf
-          <h4 class="card-title">Destination Form Input</h4>
+          <h4 class="card-title">Home Form Input</h4>
           <p class="card-description"> Input Below Here </p>
           <form class="forms-sample">
             <div class="form-group">
@@ -68,7 +68,7 @@
               <textarea name='description' class="form-control" id="exampleTextarea1" rows="4"></textarea>
             </div>
             <div class="row justify-content-end">
-              <a href="{{ route('admin.datadestinasi') }}" class="btn btn-secondary mr-2">Cancel</a>
+              <a href="{{ route('admin.datahome') }}" class="btn btn-secondary mr-2">Cancel</a>
               <button type="submit" class="btn btn-primary mr-2">Submit</button>
             </div>
           </form>

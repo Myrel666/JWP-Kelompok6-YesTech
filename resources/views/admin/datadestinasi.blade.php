@@ -27,6 +27,7 @@
                       <table class="table">
                         <thead>
                           <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Nama</th>
                             <th scope="col">Kategori</th>
                             <th scope="col">Foto</th>
@@ -36,8 +37,9 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach ($destinasi as $row)
+                          @foreach ($destinasi as $datadestinasi => $row)
                           <tr>
+                            <th scope="row">{{$datadestinasi + $destinasi->firstitem()}}</th>
                             <td>{{$row->name}}</td>
                             <td>{{$row->address}}</td>
                             <td>
@@ -53,6 +55,7 @@
                           @endforeach
                         </tbody>
                       </table>
+                      {{$destinasi->links()}}
                     </div>
                   </div>
                 </div>

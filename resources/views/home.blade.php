@@ -132,7 +132,7 @@
               <div class="row">
                 <div class="col-8">
                   <h4 class="title-highlight">
-                    <div class="h4-1"">Explore 360</div>
+                    <div class="h4-1">Explore 360</div>
                     <div class="h4-2">Wisata Surabaya</div>
                   </h4>
                 </div>
@@ -193,9 +193,11 @@
                   </div>
                 </div>
               </div>
+              
               <div class="row my-4">
                 <div class="col-md-6 mb-2">
                   <div class="row">
+                    {{-- @foreach ($destinasi as $row)
                     <div class="col-md-12 my-4">
                       <a class="text-dark w-100">
                         <div
@@ -207,23 +209,27 @@
                           "
                         >
                           <div class="img-hover">
+                            <a href="/deskripsi/deskripsidestinasi/{{$row->id}}">
                             <img
-                              src="{{ asset ('css/assets')}}/Gedung.jpg"
+                              src="{{asset('fotodestinasi/'.$row->foto)}}"
+                              alt="{{$row->name}}"
                               class="img-fluid card-img-top img-1"
                             />
+                            </a>
                           </div>
                         </div>
                         <div class="text-dark py-3">
                           <div class="mb-2">
-                            <span> History &amp; Heritage </span>
+                            <span class="span-kategori">{{$row->address}}</span>
                           </div>
                           <h5 class="font-weight-bold">
-                            GEDUNG ESCOMPTO (Bank Mandiri KCP Kembang Jepun)
+                            {{$row->name}}
                           </h5>
-                          <div class="mb-2">Jl. Kembang Jepun No 180</div>
+                          <div class="mb-2">{{$row->kategori}}</div>
                         </div>
                       </a>
                     </div>
+                    @endforeach --}}
                     <div class="col-md-12 my-4">
                       <div
                         class="card card-img"
@@ -255,7 +261,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 mb-2">
+                {{-- <div class="col-md-6 mb-2">
                   <div class="row">
                     <div class="col-md-12 my-4">
                       <div
@@ -308,7 +314,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>
