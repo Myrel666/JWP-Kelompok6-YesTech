@@ -54,9 +54,8 @@
       <h2>DESTINASI WISATA</h2>
     </div>
     <div><br/></div>
-    <form action="/destinasi" method="get">
-    <p class="destinasi-filter">
-      {{-- <button
+    {{-- <p class="destinasi-filter">
+      <button
         class="btn btn-primary collapsed"
         type="button"
         data-bs-toggle="collapse"
@@ -65,7 +64,7 @@
         aria-controls="collapse1"
       >
         Filter Wilayah
-      </button> --}}
+      </button>
 
       <button
         class="btn btn-primary collapsed"
@@ -93,7 +92,7 @@
         <i class="fa fa-fw fa-search"></i>
         Filter
       </button>
-    </p>
+    </p> --}}
 
     {{-- <div class="collapse" id="collapse1">
       <div class="card card-body">
@@ -131,7 +130,7 @@
       </div>
     </div> --}}
 
-    <div class="collapse" id="collapse2">
+    {{-- <div class="collapse" id="collapse2">
       <div class="card card-body">
         Filter Kategori
         <ul class="list1">
@@ -229,19 +228,19 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> --}}
 
-    <div class="collapse" id="collapse3">
+    {{-- <div class="collapse" id="collapse3">
       <div class="card card-body">
         <h6>Filter Kata Kunci</h6>
         <div class="form-group">
           <input type="text" name="search" class="form-control" name="keyword" />
         </div>
       </div>
-    </div>
+    </div> --}}
 
-    <div class="row">
-      <div class="col-md-4 text-center my-2">
+    {{-- <div class="row"> --}}
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ route('deskripsi.museumpendidikan') }}"
         >
@@ -260,9 +259,9 @@
             Jl. Genteng Kali No. 10
           </h6>
         </div>
-      </div>
+      </div> --}}
 
-      @foreach ($destinasi as $row)
+      {{-- @foreach ($destinasi as $row)
       <div class="col-md-4 text-center my-2">
         <a
           href="/deskripsi/deskripsidestinasi/{{$row->id}}"
@@ -283,12 +282,12 @@
           </h6>
         </div>
       </div>
-      @endforeach
-      <div class="nav-list-page">
+      @endforeach --}}
+      {{-- <div class="nav-list-page">
         <nav>
           {{$destinasi->links()}}
         </nav>
-      </div>
+      </div> --}}
 
       {{-- <div class="col-md-4 text-center my-2">
         <a

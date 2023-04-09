@@ -23,11 +23,22 @@ class ContributorController extends Controller
             $home = Home::all();
         return view('contributor.dashboard', compact('user', 'destinasi', 'kuliner', 'home'));
         }
+    
     // show navigasi destinasi
     public function datadestinasi()
     {
         $destinasi = Destination::paginate(5);
         return view('contributor.datadestinasi', compact('destinasi'));
+    }
+
+    public function destinasi(Request $request){
+        if($request->has('search')){
+            $destinasi = Destination::where('nama','LIKE','%'.$request->search.'%')
+            ->orwhere('address','LIKE','%'.$request->search.'%')->paginate(9);
+        }else{
+            $destinasi = Destination::paginate(9);
+        }
+        return view('destinasi',compact('destinasi'));
     }
 
     // show tambah destinasi

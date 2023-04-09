@@ -197,7 +197,7 @@
               <div class="row my-4">
                 <div class="col-md-6 mb-2">
                   <div class="row">
-                    {{-- @foreach ($destinasi as $row)
+                    @foreach ($home as $row)
                     <div class="col-md-12 my-4">
                       <a class="text-dark w-100">
                         <div
@@ -229,7 +229,7 @@
                         </div>
                       </a>
                     </div>
-                    @endforeach --}}
+                    @endforeach
                     <div class="col-md-12 my-4">
                       <div
                         class="card card-img"
