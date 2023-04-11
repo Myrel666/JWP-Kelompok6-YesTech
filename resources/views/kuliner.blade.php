@@ -240,7 +240,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 text-center my-2">
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/9UqhFvsAsKw8dViC9"
         >
@@ -259,7 +259,7 @@
             Sentra PKL Tamam Bungkul Jl. Raya Darmo
           </h6>
         </div>
-      </div>
+      </div> --}}
 
       @foreach ($kuliner as $row)
       <div class="col-md-4 text-center my-2">
@@ -284,7 +284,11 @@
         </div>
       </div>
       @endforeach
-
+      <div class="nav-list-page">
+        <nav>
+          {{$kuliner->links()}}
+        </nav>
+      </div>
       {{-- <div class="col-md-4 text-center my-2">
         <a
           href="https://goo.gl/maps/1aFS9ykFx3iBsabF8"

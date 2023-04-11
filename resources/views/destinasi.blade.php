@@ -242,7 +242,8 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 text-center my-2">
+      
+      {{-- <div class="col-md-4 text-center my-2">
         <a
           href="{{ route('deskripsi.museumpendidikan') }}"
         >
@@ -261,7 +262,7 @@
             Jl. Genteng Kali No. 10
           </h6>
         </div>
-      </div>
+      </div> --}}
 
       @foreach ($destinasi as $row)
       <div class="col-md-4 text-center my-2">
