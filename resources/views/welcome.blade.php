@@ -44,6 +44,7 @@
             <li class="active"><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
             <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
+            <li><a href="{{ route('tim') }}">Our Team</a></li>
             <li><a href="{{ route('auth') }}">Login</a></li>
           </ul>
         </div>

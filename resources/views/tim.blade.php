@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Destinasi</title>
+    <title>Our Team</title>
     <link rel="shortcut icon" href="{{ asset ('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -43,17 +43,221 @@
           <li class="nav-item2"><a href="{{ route('home') }}">Home</a></li>
           <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
           <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
+          <li class="nav-item2"><a href="{{ route('tim') }}">Our Team</a></li>
           <li class="nav-item2"><a href="{{ route('auth') }}">Login</a></li>
         </ul>
       </nav>
     </header>
     <div class="destinasi-nav">
-      <p><a href="{{ route('home') }}">Beranda</a> > Destinasi Wisata</p>
+      <p><a href="{{ route('home') }}">Beranda</a> > Our Team</p>
     </div>
     <div class="destinasi-judul">
-      <h2>DESTINASI WISATA</h2>
+      <h2>KELOMPOK 4</h2>
     </div>
     <div><br/></div>
+    {{-- <section id="team">
+      <div class="layar-dalam">
+        <div class="tim">
+          <div>
+            <img src="asset/tim1.jpg" />
+            <h6>John Doe</h6>
+            <span>Indonesia</span>
+          </div>
+          <div>
+            <img src="asset/tim2.jpg" />
+            <h6>John Brown</h6>
+            <span>France</span>
+          </div>
+          <div>
+            <img src="asset/tim3.jpg" />
+            <h6>Michaell</h6>
+            <span>Spain</span>
+          </div>
+        </div>
+      </div>
+    </section> --}}
+    <div class="responsive-container-block container">
+      <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <p class="text-blk name">
+              Ketua Kelompok
+            </p>
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/Kalvin.jpg">
+            </div>
+            <p class="text-blk name">
+              Kalvin Hidayatullah
+            </p>
+            <p class="text-blk position">
+              Back-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/kalvin-12">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/Kalvin7453">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kalvin-hidayatullah-17686523a">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/Ega.jpg">
+            </div>
+            <p class="text-blk name">
+              Ega Almira Sephrianti
+            </p>
+            <p class="text-blk position">
+              Back-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/Myrel666">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://id.linkedin.com/in/">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
+            </div>
+            <p class="text-blk name">
+              Nesya Amelinda
+            </p>
+            <p class="text-blk position">
+              Front-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
+            </div>
+            <p class="text-blk name">
+              Weiky Nanda Achmad
+            </p>
+            <p class="text-blk position">
+              Front-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
+            </div>
+            <p class="text-blk name">
+              Sekar Marta Pharmaningtyas
+            </p>
+            <p class="text-blk position">
+              Front-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
+            </div>
+            <p class="text-blk name">
+              Safira Dewi Agustina
+            </p>
+            <p class="text-blk position">
+              Front-End Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://github.com/" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
+            </div>
+            <p class="text-blk name">
+              User 5
+            </p>
+            <p class="text-blk position">
+              Web Developer
+            </p>
+            
+            <div class="social-icons">
+              <a href="https://www.twitter.com" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {{-- <p class="destinasi-filter">
       <button
         class="btn btn-primary collapsed"

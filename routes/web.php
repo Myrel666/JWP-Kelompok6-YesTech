@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\TimController;
 use App\Http\Controllers\DestinasiController;
 use App\Http\Controllers\KulinerPageController;
 use App\Http\Controllers\AdminController;
@@ -100,6 +101,8 @@ Route::get('/edithome/{id}',[ContributorController::class, 'edithome'])->name('e
 //Templating View
 //Home Landing Page
 Route::get('/home', [HomePageController::class, 'home'])->name('home');
+//Tim Page
+Route::get('/tim', [TimController::class, 'tim'])->name('tim');
 // Destinasi Page
 Route::get('/destinasi', [DestinasiController::class, 'destinasi'])->name('destinasi');
 // Kuliner Page
