@@ -258,6 +258,7 @@
         </div>
       </div>
     </div>
+    
     <div class="kosong"> <br> </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="transform:rotate(180deg);margin-bottom:-1px">
