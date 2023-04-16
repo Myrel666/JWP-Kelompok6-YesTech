@@ -19,7 +19,7 @@ class DestinasiController extends Controller
     //     }
     public function destinasi(Request $request){
         if($request->has('search')){
-            $destinasi = Destination::where('nama','LIKE','%'.$request->search.'%')
+            $destinasi = Destination::where('name','LIKE','%'.$request->search.'%')
             ->orwhere('address','LIKE','%'.$request->search.'%')->paginate(9);
         }else{
             $destinasi = Destination::paginate(9);

@@ -231,7 +231,7 @@
                       </a>
                     </div>
                     @endforeach
-                    <div class="col-md-12 my-4">
+                    {{-- <div class="col-md-12 my-4">
                       <div
                         class="card card-img"
                         style="
@@ -259,7 +259,7 @@
                           Plaza) | Jl. Pemuda No. 31-37 (Jl. Plaza Boulevard)
                         </div>
                       </div>
-                    </div>
+                    </div> --}}
                   </div>
                 </div>
                 {{-- <div class="col-md-6 mb-2">

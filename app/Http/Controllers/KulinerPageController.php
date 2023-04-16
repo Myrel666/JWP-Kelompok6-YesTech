@@ -15,7 +15,7 @@ class KulinerPageController extends Controller
     //     }
     public function kuliner(Request $request){
         if($request->has('search')){
-            $kuliner = Kuliner::where('nama','LIKE','%'.$request->search.'%')
+            $kuliner = Kuliner::where('name','LIKE','%'.$request->search.'%')
             ->orwhere('address','LIKE','%'.$request->search.'%')->paginate(9);
         }else{
             $kuliner = Kuliner::paginate(9);

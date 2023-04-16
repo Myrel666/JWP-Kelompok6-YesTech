@@ -70,7 +70,6 @@ Route::get('/deletehome/{id}',[AdminController::class, 'deletehome'])->name('del
 // Contributor
 Route::get('beranda', [ContributorController::class, 'index'])->middleware('auth')->name('contributor.beranda');
 // Contributor-Destinasi
-// Route::get('/destinasi', [ContributorController::class, 'destinasi'])->name('destinasi');
 Route::get('contributor/datadestinasi', [ContributorController::class, 'datadestinasi'])->name('contributor.datadestinasi');
 Route::get('contributor/destinasi/form', [ContributorController::class, 'destinasiForm'])->name('contributor.destinasi.form');
 Route::get('deskripsi/deskripsidestinasi/{id}',[ContributorController::class, 'deskripsidestinasi'])->name('deskripsidestinasi');

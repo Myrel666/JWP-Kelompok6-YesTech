@@ -237,10 +237,10 @@
               <img class="team-member-image" src="{{ asset ('css/assets')}}/user.jpg">
             </div>
             <p class="text-blk name">
-              User 5
+              Ilham Dicky Dermawan
             </p>
             <p class="text-blk position">
-              Web Developer
+              Front-End Developer
             </p>
             
             <div class="social-icons">
@@ -258,7 +258,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="kosong"> <br> </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="transform:rotate(180deg);margin-bottom:-1px">

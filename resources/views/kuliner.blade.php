@@ -54,6 +54,7 @@
       <h2>KULINER SURABAYA</h2>
     </div>
     <div><br /></div>
+    <form action="/kuliner" method="get">
     <p class="kuliner-filter">
       {{-- <button
         class="btn btn-primary collapsed"
@@ -234,7 +235,7 @@
       <div class="card card-body">
         <h6>Filter Kata Kunci</h6>
         <div class="form-group">
-          <input type="text" class="form-control" name="keyword" />
+          <input type="text" name="search" class="form-control" name="keyword" />
         </div>
       </div>
     </div>
