@@ -477,15 +477,3 @@ body {
 .team-member-image {
     max-width: 100%;
 }
-
-/* tim */
-.layar-dalam {
-    width: 1000px;
-    margin: auto;
-}
-
-.tim {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
