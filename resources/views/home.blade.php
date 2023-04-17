@@ -25,6 +25,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
+    {{-- <link rel="stylesheet" href="{{asset('css/templatemo-edu-meeting.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/lightbox.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/owl.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" /> --}}
+    {{-- <link rel="stylesheet" href="{{asset('css/tes.css')}}" /> --}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
   </head>
   <body>
@@ -210,7 +217,7 @@
                           "
                         >
                           <div class="img-hover">
-                            <a href="/deskripsi/deskripsidestinasi/{{$row->id}}">
+                            <a href="#{{$row->id}}">
                             <img
                               src="{{asset('fotodestinasi/'.$row->foto)}}"
                               alt="{{$row->name}}"
@@ -262,7 +269,7 @@
                     </div> --}}
                   </div>
                 </div>
-                {{-- <div class="col-md-6 mb-2">
+                <div class="col-md-6 mb-2">
                   <div class="row">
                     <div class="col-md-12 my-4">
                       <div
@@ -315,12 +322,109 @@
                       </div>
                     </div>
                   </div>
-                </div> --}}
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- section sub menu-->
+        {{-- <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h2>DESTINASI WISATA</h2>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="categories">
+                <h4>Kategori Destinasi</h4>
+                <ul>
+                  <li><a href="/maindestinasi?search=History">History &amp; Heritage,</a></li>
+                  <li><a href="/maindestinasi?search=Outdoor">Outdoor &amp; Nature,</a></li>
+                  <li><a href="/maindestinasi?search=Museum">Museum,</a></li>
+                  <li><a href="/maindestinasi?search=Religi">Religi,</a></li>
+                  <li><a href="/maindestinasi?search=Pusat">Pusat Perbelanjaan</a></li>
+                </ul>
+                <div class="main-button-red">
+                  <a href="/maindestinasi">Semua Destinasi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="row">
+                             <div class="col-lg-6">
+                    <div class="meeting-item">
+                      <div class="thumb">
+                        <div class="price">
+                          <span>Religi</span>
+                        </div>
+                        <a href="/deskripsidestinasi/1"><img src="http://kelompok8.surabayawebtech.com/fotodestinasi/masjid.jpg" alt="New Lecturer Meeting" style="height:211.5px"></a>
+                      </div>
+                      <div class="down-content">
+                        <div class="date">
+                          <h6><span></span></h6>
+                        </div>
+                        <a href="/deskripsidestinasi/1"><h4>MASJID NASIONAL AL AKBAR</h4></a>
+                      <p> <i class="fa fa-map-marker"></i> &nbsp; Jl. Masjid Agung Timur No.1</p>
+                      </div>
+                    </div>
+                  </div>
+                             <div class="col-lg-6">
+                    <div class="meeting-item">
+                      <div class="thumb">
+                        <div class="price">
+                          <span>Museum</span>
+                        </div>
+                        <a href="/deskripsidestinasi/2"><img src="http://kelompok8.surabayawebtech.com/fotodestinasi/museumolahraga.jpg" alt="New Lecturer Meeting" style="height:211.5px"></a>
+                      </div>
+                      <div class="down-content">
+                        <div class="date">
+                          <h6><span></span></h6>
+                        </div>
+                        <a href="/deskripsidestinasi/2"><h4>MUSEUM OLAHRAGA SURABAYA</h4></a>
+                      <p> <i class="fa fa-map-marker"></i> &nbsp; Jl. Indragiri No.6, Gelora Pancasila</p>
+                      </div>
+                    </div>
+                  </div>
+                             <div class="col-lg-6">
+                    <div class="meeting-item">
+                      <div class="thumb">
+                        <div class="price">
+                          <span>Monumen &amp; Landmark</span>
+                        </div>
+                        <a href="/deskripsidestinasi/3"><img src="http://kelompok8.surabayawebtech.com/fotodestinasi/tugu pahlawan.jpg" alt="New Lecturer Meeting" style="height:211.5px"></a>
+                      </div>
+                      <div class="down-content">
+                        <div class="date">
+                          <h6><span></span></h6>
+                        </div>
+                        <a href="/deskripsidestinasi/3"><h4>MONUMEN TUGU PAHLAWAN</h4></a>
+                      <p> <i class="fa fa-map-marker"></i> &nbsp; Jl. Pahlawan</p>
+                      </div>
+                    </div>
+                  </div>
+                             <div class="col-lg-6">
+                    <div class="meeting-item">
+                      <div class="thumb">
+                        <div class="price">
+                          <span>History &amp; Heritage</span>
+                        </div>
+                        <a href="/deskripsidestinasi/4"><img src="http://kelompok8.surabayawebtech.com/fotodestinasi/jalan tunjungan.jpg" alt="New Lecturer Meeting" style="height:211.5px"></a>
+                      </div>
+                      <div class="down-content">
+                        <div class="date">
+                          <h6><span></span></h6>
+                        </div>
+                        <a href="/deskripsidestinasi/4"><h4>JALAN TUNJUNGAN</h4></a>
+                      <p> <i class="fa fa-map-marker"></i> &nbsp; Jl.Tunjungan</p>
+                      </div>
+                    </div>
+                  </div>
+                         
+              </div>
+            </div>
+          </div>
+        </div> --}}
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="transform:rotate(180deg);margin-bottom:-5px">
         <path class="elementor-shape-fill" fill="#4a4a8a" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
